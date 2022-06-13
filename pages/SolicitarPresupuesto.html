@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link de Tipografia y css-->
+    <!--Font Bebas Neue('Bebas Neue', cursive;) y Montserrat('Montserrat', sans-serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,900;1,100;1,300;1,400;1,600;1,900&display=swap" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Presupuesto</title>
+    <link rel="shortcut icon" href="../Imagenes/logoPerfil.jpg">
+</head>
+<body>
+    <header id="inicio">
+        <a href="../Index.html">
+            <img src="../Imagenes/logoGaelecMaterElec.png" alt="Gaelec">
+        </a>
+        <div class="informacion">
+            <h4 class="horario">Horarios de Atención:</h4>
+            <h4>Lunes a Viernes: 9 a 13hs/ 15 a 19hs.</h4>  
+            <h4>Sabados: 8.30 a 13.30hs.</h4> 
+        </div>
+        <div class="whatsapp">
+            <h5 >Whatsapp: 2615333220</h5>
+        </div>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><h4 id="botonMenu"> Menu</h4>
+                <ul class="submenu">
+                    <li  class="menuItem">
+                        <a class="links" href="Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="QueHacemos.html">¿Que Hacemos?</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="Productos.html">Productos</a>
+                    </li >
+                    <li class="menuItem4">
+                        <a class="linkPresupuesto" href="SolicitarPresupuesto.html">Solicitar Presupuesto</a>
+                    </li>  
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <h1 class="tituloPresupuesto">Consulta y Presupuesto</h1>
+    <main class="mainPresupuesto">
+        <form action="">
+            <fieldset class="bordePresupuesto">
+                <input class="campo" type="text" name="Nombre" placeholder="Nombre">
+                <input class="campo" type="text" name="Celular" placeholder="Teléfono">    
+                <input class="campo" type="email" name="Email" placeholder="Correo electronico">
+                <select class="campo" name="Consulta">
+                    <option value="Consul">Seleccioná una opción</option>
+                    <option value="Pago">Forma de Pago</option>
+                    <option value="Presupuesto">Presupuesto</option>
+                </select>
+                <input class="campoGrande" type="text" name="Consulta" placeholder="Escriba su consulta aquí"> 
+                <input class="campo" type="submit" value="Enviar Mensaje">
+            </fieldset>
+            
+        </form>
+        <img class="imgPresupuesto" src="../Imagenes/presupuesto.jpeg" alt="Consulta">
+        
+    </main>
+    <section class="presupuestoMensaje">
+        <p class="subtitulo2">Muchas Gracias por su consulta, nos comunicaremos para derle respuesta prontamente. </p>
+    </section>
+    <footer>
+        <a class="botonWhatsapp" href="https://wa.me/message/WNA2DAIUBEXOG1" target="_blank">
+            <img src="../Imagenes/logoWhatsapp.png" alt="Chat Whatsapp">
+        </a>
+        <h4 class="">Seguinos en:</h4>
+        <ul class="menuRedes">
+            <li class="redes">
+                <a href="https://www.instagram.com/GaelecMaterialeselectricos/" target="_blank">
+                    <img src="../imagenes/logoInsta.png" alt="Instagram">
+                </a>
+                <h5>Gaelec Materiales Electricos</h5>
+            </li>
+            <li class="redes">
+                <a  href="https://facebook.com/GaelecMaterialeselectricos" target="_blank">
+                    <img src="../imagenes/logoFacebook.png" alt="Facebook">
+                </a>
+                <h5>Gaelec Materiales Electricos</h5>
+            </li>
+            <li class="redes">
+                <img src="../imagenes/logoMail.png" alt="Mail">
+                <h5 > gaelec.ventas@gmail.com</h5>
+            </li>
+        </ul>
+        <h4 class="vuelta">
+            <a href="#inicio">
+                <img src="../imagenes/logoFlecha.png" alt="Volver">
+            </a>
+        </h4>
+        <h4 class="derechos">® Todos los derechos reservados.</h4>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+/*----------------HEADER--------------------*/
+header{
+    height: 5rem;
+    display: inline-block;
+}
+header img{
+    height: 5rem;
+    margin: 0.5rem;
+}
+.informacion{
+    display: none;
+}
+.whatsapp{
+    display: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+.menu{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+}
+.menu ul{
+    padding: 1rem;
+    list-style: none;
+}
+.menu ul li:hover > ul {
+    display: block;
+}
+.menu ul li .submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 0;
+    background-color: #305caa;
+   
+}
+.submenu li{
+    margin: 1rem;
+    background-color: #305caa;
+    border-radius: 1rem;
+    padding: 0.4rem;
+}
+.subtitulo{
+    font-size: 1.5rem;
+    text-align: center;
+}
+/*---------------------MAIN DE PAG. INDEX-------------------------*/
+/*portada pag. Index*/
+.portada{
+    height: 10rem;
+    display: flex;
+    background-image: url(../Imagenes/contacto2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*main pag. Index*/
+.columElec{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.imgParrafo{
+    height: 10rem;
+}
+.parrafoColumna{
+    text-align: justify;
+}
+/*section marcas pag. Index*/
+.marcas{
+    text-align: center;
+    margin-top: 4rem;
+ }
+.reels{
+    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+#marca1, #marca2, #marca3, #marca4, #marca5, #marca6, #marca7{
+    height: 3.5rem;
+    width: 5rem;
+}
+/*Forma de Pago pag. Index*/
+.pagos {
+    height: 10rem;
+    display: grid;
+        grid-template-areas:"titulo img1"
+                            "texto img1"
+                            "texto boton";                          
+    margin-top: 3rem;
+    gap: 1rem;
+    text-align: center;
+}
+.pagos #h4Pagos{
+    grid-area: titulo;
+}
+.pagos #ulPagos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: texto;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.pagos #postnet{
+    grid-area: img1;
+}
+.pagos #postnet img{
+    height: 8rem;
+}
+.pagos #efectivo{
+    display: none;
+}
+.pagos #consulta{
+    grid-area: boton;
+}
+.pagos #visa{
+    display: none;
+}
+.botonConsulta{
+    width: 10rem;
+    background-color: rgb(230, 204, 62);
+    padding: 0.7rem;
+    text-align: center;
+    border-radius: 1rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+/*---------------------MAIN DE PAG. NOSOTROS-------------------------*/
+.mainNosotros{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.nosotros, .mision, .vision{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 2rem;
+}
+/*---------------------MAIN DE PAG. QUE HACEMOS?---------------------*/
+.imgParrafo2, .imgParrafo1, .imgAurora{
+    display: none;
+}
+.contenedorHacemos{
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+}
+.mainHacemos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.contenedorHacemos .mainHacemos div, .aurora{
+    display: grid;
+    gap: 1rem;
+}
+.contenedorHacemos .mainHacemos div p, .aurora p{
+    text-align: justify;
+    margin: 2rem;
+}
+/*---------------------MAIN DE PAG. PRODUCTOS------------------------*/
+.submenu{
+    display: none;
+}
+.mainProductos{
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+}
+#cables, #canos,#luz,#lamparas,#jeluz,#proteccion,#otros,#guirnaldas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+.product{
+    height: 12.5rem;
+    width: 12.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    border-color: rgb(170, 135, 89);
+    text-align: center;
+}
+/*---------------------MAIN DE PAG. PRESUPUESTO----------------------*/
+.tituloPresupuesto{
+    text-align: center;
+    margin: 2rem;
+}
+/*Body pag. Presupuesto*/
+.imgPresupuesto{
+    display: none;
+}
+.mainPresupuesto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bordePresupuesto{
+    margin: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    border-style: solid;
+    border-color: #142f4d;
+    border-width: 0.2rem;
+    border-radius: 4%;
+    background-color: #2e609ecb;
+    gap: 2rem;
+}
+.campo{
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: none;
+}
+.campoGrande{
+    height: 10rem;
+    border-radius: 1rem;
+    border: none;
+    display: flex;
+}
+/*---------------FOOTER-------------------------*/
+/*Botones*/
+.botonWhatsapp{
+    position: fixed;
+    bottom: 0.9rem;
+    right: 0.5rem;
+}
+.botonWhatsapp img{
+    height: 3.5rem;
+}
+.vuelta{
+    display: none;
+}
+footer{
+    text-align: center;
+    background-color: rgb(25, 25, 27);
+    color: white;
+    padding: 0.5rem;
+    margin-top: 3rem;
+}
+.menuRedes{
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    text-align: justify;
+}
+.redes{
+    width: 14rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes h5{
+    width: 11rem;
+    text-align: left;
+}
+/*Derechos*/
+.derechos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: lighter;
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+}
+/*-----------MEDIA QUARIES 600PX--------------*/
+@media screen and (min-width: 600px) {
+    header{
+        display: flex;
+        height: 8rem;
+        justify-content: space-evenly;
+    }
+    header img{
+        height: 5.5rem;
+    }
+    .informacion{
+        display: flex;
+        flex-flow: column wrap;
+        font-size: 0.8rem;
+        justify-content: space-evenly;
+        font-family: 'Montserrat', sans-serif;
+        align-items: center;
+    }
+    .horario{
+        text-decoration: underline; 
+    }
+    .menu{
+        right: 0rem;
+        top: 4rem;
+        text-align: right;
+    }
+    .portada{
+        height: 20rem;
+    }
+    .imgParrafo{
+        height: 15rem;
+    }
+    .pagos{
+        height: 25rem;
+        display: grid;
+        grid-template-areas:"titulo img1"
+                            "texto img1"
+                            "boton img2"
+                            "boton img2";
+    }
+    .pagos #efectivo{
+        display: flex;
+        grid-area: img2;
+    }
+    .pagos #postnet{
+        display: flex;
+        justify-content: left;
+    }
+    .pagos #postnet img{
+        height: 12rem;
+    }
+    .pagos #efectivo img{
+        height: 12rem;
+    }
+    .pagos #consulta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .vuelta{
+        display: block;
+        height: 3rem;
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+    }
+    /*---------MAIN DE PAG. QUE HACEMOS-------*/
+    .imgParrafo1 , .imgParrafo2{
+        display: flex;
+        width: 19rem;
+    }
+    /*---------MAIN DE PAG. PRESUPUESTO-------*/
+    .campoGrande{
+        height: 12rem;
+        width: 25rem;
+        border: none;
+    }
+}
+/*-----------MEDIA QUARIES 1024PX--------------*/
+@media screen and (min-width: 1024px) {
+    /*Header*/
+        header{
+            display: flex;
+        }
+    header img{
+        height: 9rem;
+    }
+    .whatsapp{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        font-size: 2rem;
+        font-family: 'Bebas Neue', cursive;
+    }
+    .horario{
+        text-decoration: underline; 
+    }
+    .informacion{
+        display: flex;
+        flex-flow: column wrap;
+        font-size: 1rem;
+        justify-content: space-evenly;
+        font-family: 'Montserrat', sans-serif;
+        align-items: center;
+    }
+   #botonMenu{
+       display: none;
+   }
+    /*Menu*/
+    .menu{
+    grid-area: menu;
+    height: 80px;
+    display: flex;
+    position: static;
+    }
+    .menu ul li .submenu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        background-color: white;
+        gap: 0.5rem;
+        position: static;
+    }
+    .menu ul li:hover > ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .portada{
+        height: 30rem;
+        margin-top: 2rem;
+    }
+    /*Body pag.Index*/
+    .mainIndex{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 4.5rem;
+    }
+   /*Columnas Materiales Electricos y Iluminacion pag.Index*/
+   .columna{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    }
+    .columElec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+    .imgParrafo{
+        height: 20rem;
+    }
+    .parrafoColumna1{
+        text-align: justify;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 4.5rem;
+    }
+    .parrafoColumna2{
+        text-align: justify;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 6rem;
+    }
+    #marca1, #marca2, #marca3, #marca4, #marca5, #marca6, #marca7{
+        height: 5rem;
+        width: 8rem;
+    }
+    .pagos{
+        height: 30rem;
+        display: grid;
+        grid-template-areas:"titulo img1 img2"
+                            "titulo img1 img2"
+                            "texto img1 img2"
+                            "boton img1 img2"
+                            "img3 img3 img3";
+        gap: 0.2rem;
+        background-color: #ffffff;
+        border-radius: 2rem;
+        padding: 4rem;
+    }
+    .pagos #visa{
+        display: flex;
+        justify-content: left;
+        grid-area: img3;
+    }
+    .pagos #visa img{
+        height: 11rem;
+    }
+    /*----------------MAIN DE PAG. NOSOTROS------------*/
+    .mainNosotros{
+        display: grid;
+        grid-template-areas:"nosotros nosotros"
+                            "mision vision";
+        gap: 4rem;
+        padding: 4rem;
+    }
+    .nosotros{
+        grid-area: nosotros;
+    }
+    .vision{
+        grid-area: vision;
+    }
+    .mision{
+        grid-area: mision;
+    }
+    /*--------------MAIN DE PAG. QUE HACEMOS----------*/
+    .mainHacemos{
+        display: grid;
+        grid-template-areas:"texto1 img1"
+                            "texto2 img2"
+                            "texto3 img3";
+    }
+    .parrafoHacemos1{
+        grid-area: texto1;
+    }
+    .imgParrafo1{
+        grid-area: img1;
+    }
+    .parrafoHacemos2{
+        grid-area: texto2;
+    }
+    .imgParrafo2{
+        grid-area: img2;
+    }
+    .aurora{
+        grid-area: texto3;
+    }
+    .imgAurora{
+        width: 20rem;
+        display: flex;
+        grid-area: img3;
+    }
+    /*----------------MAIN DE PAG. PRODUCTOS----------*/
+    .mainProductos{
+        gap: 2rem;
+    }
+    #cables, #canos,#luz,#lamparas,#jeluz,#proteccion,#otros,#guirnaldas{
+        flex-direction: row;
+        gap: 4rem;
+    }
+    /*---------------------MAIN DE PAG. PRESUPUESTO------*/
+    .imgPresupuesto{
+        display: flex;
+    }
+    .mainPresupuesto{
+        display: flex;
+        flex-direction: row;
+    }
+    .presupuestoMensaje{
+        text-align: center;
+        margin: 2rem;
+    }
+    /*Pie de Página*/
+    footer{
+        padding: 2rem;
+    }
+    
+}
