@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,900;1,100;1,300;1,400;1,600;1,900&display=swap" rel="stylesheet">
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--Css-->
     <link rel="stylesheet" href="../css/main.css">
     <!--Link css animaciones-->
@@ -30,25 +32,30 @@
             <h5 >Whatsapp: 2615333220</h5>
         </div>
     </header>
-    <nav class="menu">
-        <ul>
-            <li><h4 id="botonMenu"> Menu</h4>
-                <ul class="submenu">
-                    <li  class="menuItem">
-                        <a class="links" href="Nosotros.html">Nosotros</a>
+    <nav class="row menu">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav submenu">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="Nosotros.html">Nosotros</a>
                     </li>
-                    <li class="menuItem">
-                        <a href="QueHacemos.html">¿Que Hacemos?</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="QueHacemos.html">¿Que Hacemos?</a>
                     </li>
-                    <li class="menuItem">
-                        <a href="Productos.html">Productos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">Productos</a>
                     </li >
-                    <li class="menuItem4">
-                        <a class="linkPresupuesto" href="SolicitarPresupuesto.html">Solicitar Presupuesto</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SolicitarPresupuesto.html">Solicitar Presupuesto</a>
                     </li>  
                 </ul>
-            </li>
-        </ul>
+              </div>
+            </div>
+          </nav>
     </nav>
     <div class="contenedorHacemos">
         <div class="tituloHacemos">
@@ -104,5 +111,7 @@
         </h4>
         <h4 class="derechos">® Todos los derechos reservados.</h4>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

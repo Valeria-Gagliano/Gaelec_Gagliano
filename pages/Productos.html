@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,900;1,100;1,300;1,400;1,600;1,900&display=swap" rel="stylesheet">
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--Css-->
     <link rel="stylesheet" href="../css/main.css">
     <!--Link css animaciones-->
@@ -17,153 +19,202 @@
     <link rel="shortcut icon" href="../Imagenes/logoPerfil.jpg">
 </head>
 <body>
-    <header id="inicio">
-            <a href="../Index.html">
-                <img src="../Imagenes/logoGaelecMaterElec.png" alt="Gaelec">
-            </a>
-            <div class="informacion">
-                <h4 class="horario">Horarios de Atención:</h4>
-                <h4>Lunes a Viernes: 9 a 13hs/ 15 a 19hs.</h4>  
-                <h4>Sabados: 8.30 a 13.30hs.</h4> 
-            </div>
-            <div class="whatsapp">
-                <h5 >Whatsapp: 2615333220</h5>
-            </div>
-    </header>
-    <nav class="menu">
-        <ul>
-            <li><h4 id="botonMenu"> Menu</h4>
-                <ul class="submenu">
-                    <li  class="menuItem">
-                        <a class="links" href="Nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="menuItem">
-                        <a href="QueHacemos.html">¿Que Hacemos?</a>
-                    </li>
-                    <li class="menuItem">
-                        <a href="Productos.html">Productos</a>
-                    </li >
-                    <li class="menuItem4">
-                        <a class="linkPresupuesto" href="SolicitarPresupuesto.html">Solicitar Presupuesto</a>
-                    </li>  
+    <div class="container-fluid ">
+        <header class="row m-3" id="inicio">
+                <a class="col-4" href="../Index.html">
+                    <img src="../Imagenes/logoGaelecMaterElec.png" alt="Logo Gaelec Materiales Electricos">
+                </a>
+                <div class="col informacion ">
+                    <h4 class="horario">Horarios de Atención:</h4>
+                    <h4>Lunes a Viernes: 9 a 13hs/ 15 a 19hs.</h4>  
+                    <h4>Sabados: 8.30 a 13.30hs.</h4> 
+                </div>
+                <div class="col whatsapp">
+                    <h5>Whatsapp: 2615333220</h5>
+                </div>
+        </header>
+        <nav class="row menu">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav submenu">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="QueHacemos.html">¿Que Hacemos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Productos.html">Productos</a>
+                        </li >
+                        <li class="nav-item">
+                            <a class="nav-link" href="SolicitarPresupuesto.html">Solicitar Presupuesto</a>
+                        </li>  
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </nav>
+        <div class="row conteiner text-center">
+            <aside class="col-3 submenuProductos">
+                <ul class="col submenuProducto">
+                    <li><a href="#cables">Cables</a></li>
+                    <li><a href="#canos">Caños y Accesorios</a></li>
+                    <li><a href="#luz">Iluminacion</a></li>
+                    <li><a href="#lamparas">Lamparas</a></li>
+                    <li><a href="#jeluz">Interruptores y enchufes</a></li>
+                    <li><a href="#proteccion">Proteccion electrica</a></li>
+                    <li><a href="#guirnaldas">Guirnaldas</a></li>
+                    <li><a href="#otros">Otros</a></li>    
                 </ul>
-            </li>
-        </ul>
-    </nav>
-    <aside class="submenuProductos">
-            <ul class="submenu">
-                <li><a href="#cables">Cables</a></li>
-                <li><a href="#canos">Caños y Accesorios</a></li>
-                <li><a href="#luz">Iluminacion</a></li>
-                <li><a href="#lamparas">Lamparas</a></li>
-                <li><a href="#jeluz">Interruptores y enchufes</a></li>
-                <li><a href="#proteccion">Proteccion electrica</a></li>
-                <li><a href="#guirnaldas">Guirnaldas</a></li>
-                <li><a href="#otros">Otros</a></li>
-            </ul>
-        </aside>
-    <main class="mainProductos">
-        <h4 class="subtitulo">Cables</h4>
-        <div id=cables>
-            <div class="product">
-                <img src="../Imagenes/unipolares.jpeg" alt="Unipolar">
-                <p>Cable Unipolar</p>
-            </div>
-            <div class="product">
-                <img src="../Imagenes/bipolar.jpeg" alt="Bipolar">
-                <p>Cable Bipolar</p>
-            </div>
-            <div class="product">
-                <img src="../Imagenes/taller.jpeg" alt="Taller">
-                <p>Cable Taller</p>
-            </div>
-            <div class="product">
-                <img src="../Imagenes/subterraneo.jpeg" alt="Subterraneo">
-                <p>Cable Subterraneo</p>
-            </div>
-        </div>
-        <h4 class="subtitulo">Caños y Accesorios</h4>
-        <div id="canos">
-            <div class="product">
-                <img src="../Imagenes/canos.jpeg" alt="Caños">
-                <p>Caños Semipesados y Extrapesados</p>
-            </div>
-            <div class="product">
-                <img src="../Imagenes/accesorios.jpeg" alt="Accesorios de caños">
-                <p>Accesorios de caños</p>
-            </div>    
-        </div>
-        <h4 class="subtitulo">Iluminacion</h4>
-        <div id="luz">
-            <div class="product">
-                <img src="../Imagenes/lamparaLed.jpg" alt="Led">
-                <p>Lamparas Led</p>
-            </div>
-            <div class="product">
-                <img src="../Imagenes/vintage.jpg" alt="Foco Vintage">
-                <p>Lamparas Led Vintage</p>
-            </div>
-            <div class="product">
-                <img src="../Imagenes/paneles.jpg" alt="Paneles Led">
-                <p>Paneles</p>
-            </div>
-            <div class="product">
-                <img src="../Imagenes/reflector.jpg" alt="Reflectores Led">
-                <p>Reflectores Led</p>
-            </div>
-        </div>
-        <h4 class="subtitulo">Lamparas</h4>
-        <div id="lamparas">
-            <div class="product">
-                <img src="../Imagenes/lamparasColgantes.jpeg" alt="Lamparas">
-                <p>Colgantes</p>
-            </div>
-            <div class="product">
-                <img src="../Imagenes/aplique.jpeg" alt="Aplique de Exterior">
-                <p>Aplique de Exterior</p>
-            </div>
-        </div>
-        <h4 class="subtitulo">Interruptores y Enchufes</h4>
-        <div id="jeluz">
-            <div class="product">
-                <img src="../Imagenes/llavesJeluz.jpeg" alt="Llaves embutir">
-                <p>Llaves de Embutir</p>
-            </div>
-            <div class="product">
-                <img src="../Imagenes/llavesEmbutir.jpeg" alt="Llaves exterior">
-                <p>Llaves Exterior</p>
-            </div>
-            <div class="product">
-                <img src="../Imagenes/alargue.jpg" alt="alargue">
-                <p>Zapatillas y alargues</p>
-            </div>
-        </div>
-        <h4 class="subtitulo">Protecciones electricas</h4>
-        <div id="proteccion">
-            <div class="product">
-                <img src="../Imagenes/disyuntor.jpg" alt="Disyuntores">
-                <p>Termicas y disyuntores</p>
-            </div>
-        </div>
-        <h4 class="subtitulo">Guirnaldas</h4>
-        <div id="guirnaldas">
-            <div class="product">
-                <img src="../Imagenes/guirnaldasLed.jpg" alt="Guirnalda">
-                <p>Guirnaldas Led</p>
-            </div>
-        </div>
-        <h4 class="subtitulo">Otros</h4>
-        <div id="otros">
-            <div class="product">
-                <img src="../Imagenes/cintaTacsa.jpg" alt="Cinta Aisladora">
-                <p>Cinta Aisladora</p>
-            </div>
-            </div>
-        </main>
-        <footer>
-            <a class="botonWhatsapp" href="https://wa.me/message/WNA2DAIUBEXOG1" target="_blank">
-                <img class="animate__animated animate__heartBeat animate__infinite" src="../Imagenes/logoWhatsapp.png" alt="Chat Whatsapp">
+            </aside>
+            <main class="col-9 d-flex justify-content-evenly flex-column mb-5 aling-items-center gap-5 ">
+                <h4 class="col">Cables</h4>
+                <div class="row d-flex justify-content-evenly" id=cables>
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/unipolares.jpeg" class="card-img-top" alt="Cable Unipolar">
+                        <div class="card-body">
+                            <p class="card-text">Cable Unipolar</p>
+                        </div>
+                    </div>
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/bipolar.jpeg" class="card-img-top" alt="Cable Bipolar">
+                        <div class="card-body">
+                            <p class="card-text">Cable Bipolar</p>
+                        </div>
+                    </div>
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/taller.jpeg" class="card-img-top" alt="Cable Taller">
+                        <div class="card-body">
+                            <p class="card-text">Cable Tipo Taller</p>
+                        </div>
+                    </div>
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/subterraneo.jpeg" class="card-img-top" alt="Cable Subterraneo">
+                        <div class="card-body">
+                            <p class="card-text">Cable Subterraneo</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="col">Caños y Accesorios</h4>
+                <div class="row d-flex justify-content-evenly" id="canos">
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/canos.jpeg" class="card-img-top" alt="Caños Pvc">
+                        <div class="card-body">
+                            <p class="card-text">Caños Semipesados y Ultrapesados</p>
+                        </div>
+                    </div>
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/accesorios.jpeg" class="card-img-top" alt="Accesorios de cañeria">
+                        <div class="card-body">
+                            <p class="card-text">Accesorios para caños</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="col">Iluminacion</h4>
+                <div class="row d-flex justify-content-evenly" id="luz">
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/lamparaLed.jpg" class="card-img-top" alt="Led">
+                        <div class="card-body">
+                            <p class="card-text">Lamparas Led</p>
+                        </div>
+                    </div>
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/vintage.jpg" class="card-img-top" alt="Lamparas Vintage">
+                        <div class="card-body">
+                            <p class="card-text">Lamparas Led Vintage</p>
+                        </div>
+                    </div>
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/paneles.jpg" class="card-img-top" alt="Paneles Led">
+                        <div class="card-body">
+                            <p class="card-text">Paneles Led</p>
+                        </div>
+                    </div>
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/reflector.jpg" class="card-img-top" alt="Reflectores Led">
+                        <div class="card-body">
+                            <p class="card-text">Reflectores Led</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="col">Lamparas</h4>
+                <div class="row d-flex justify-content-evenly" id="lamparas">
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/lamparasColgantes.jpeg" class="card-img-top" alt="Lamparas">
+                        <div class="card-body">
+                            <p class="card-text">Lamparas Colgantes</p>
+                        </div>
+                    </div>
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/aplique.jpeg" class="card-img-top" alt="Aplique de Exterior">
+                        <div class="card-body">
+                            <p class="card-text">Aplique Exterior</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="col">Interruptores y Enchufes</h4>
+                <div class="row d-flex justify-content-evenly" id="jeluz">
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/llavesJeluz.jpeg" class="card-img-top" alt="Llaves embutir">
+                        <div class="card-body">
+                            <p class="card-text">Llaves de Embutir</p>
+                        </div>
+                    </div>
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/llavesEmbutir.jpeg" class="card-img-top" alt="Llaves Exteriores">
+                        <div class="card-body">
+                            <p class="card-text">Llaves Exteriores</p>
+                        </div>
+                    </div>
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/alargue.jpg" class="card-img-top" alt="Alargues">
+                        <div class="card-body">
+                            <p class="card-text">Prolongadores</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="col">Protecciones electricas</h4>
+                <div class="row d-flex justify-content-evenly" id="proteccion">
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/disyuntor.jpg" class="card-img-top" alt="Disyuntor">
+                        <div class="card-body">
+                            <p class="card-text">Interruptores Termomagneticos y Diferenciales</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="col">Guirnaldas</h4>
+                <div class="row d-flex justify-content-evenly" id="guirnaldas">
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/guirnaldasLed.jpg" class="card-img-top" alt="Guirnalda">
+                        <div class="card-body">
+                            <p class="card-text">Guirnalda Led</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="col">Otros</h4>
+                <div class="row d-flex justify-content-evenly" id="otros">
+                    <div class="col-3 card" style="width: 12rem;">
+                        <img src="../Imagenes/cintaTacsa.jpg" class="card-img-top" alt="Cinta Aisladora">
+                        <div class="card-body">
+                            <p class="card-text">Cinta Aisladora</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div class="row conteiner">
+        <a class="botonWhatsapp" href="https://wa.me/message/WNA2DAIUBEXOG1" target="_blank">
+            <img class="animate__animated animate__heartBeat animate__infinite" src="../Imagenes/logoWhatsapp.png" alt="Chat Whatsapp">
+        </a>
+        <h4 class="vuelta">
+            <a href="#inicio">
+                <img src="../imagenes/logoFlecha.png" alt="Volver">
             </a>
+        </h4>
+        <footer class="row">
             <h4 class="">Seguinos en:</h4>
             <ul class="menuRedes">
                 <li class="redes">
@@ -183,12 +234,11 @@
                     <h5 > gaelec.ventas@gmail.com</h5>
                 </li>
             </ul>
-            <h4 class="vuelta">
-                <a href="#inicio">
-                    <img src="../imagenes/logoFlecha.png" alt="Volver">
-                </a>
-            </h4>
+           
             <h4 class="derechos">® Todos los derechos reservados.</h4>
         </footer>
+    </div>  
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
