@@ -7,6 +7,7 @@
 
 p{
     font-size: 0.8rem;
+    text-align: justify;
 }
 /*----------------HEADER--------------------*/
 header{
@@ -30,19 +31,20 @@ a{
     color: white;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: large;
+    font-size: small;
+}
+.nav-link{
+    color: white;
 }
 .submenu li, .submenuProducto li{
-    width: 15rem;
-    margin: 1rem;
-    background-color: #305caa;
+    margin: 0.5rem;
+    background-color: #050833;
     border-radius: 1rem;
-    padding: 0.15rem;
     text-align: center;
     list-style: none;
 }
 .subtitulo{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 /*---------------------MAIN DE PAG. INDEX-------------------------*/
@@ -55,6 +57,7 @@ a{
     background-size: cover;
 }
 /*main pag. Index*/
+
 .columElec{
     margin: 2rem;
     display: flex;
@@ -73,12 +76,8 @@ a{
     text-align: justify;
 }
 /*section marcas pag. Index*/
-.marcas{
-    text-align: center;
-    margin-top: 4rem;
- }
 .reels{
-    height: 10rem;
+    height: 15rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -91,13 +90,12 @@ a{
 }
 /*Forma de Pago pag. Index*/
 .pagos {
-    height: 10rem;
+    height: 19rem;
     display: grid;
         grid-template-areas:"titulo img1"
                             "texto img1"
                             "texto boton";                          
     margin-top: 3rem;
-    gap: 1rem;
     text-align: center;
 }
 .pagos #h4Pagos{
@@ -128,7 +126,7 @@ a{
     display: none;
 }
 .botonConsulta{
-    width: 10rem;
+    width: 8rem;
     background-color: rgb(230, 204, 62);
     padding: 0.7rem;
     text-align: center;
@@ -151,6 +149,23 @@ a{
     align-items: center;
     text-align: justify;
     gap: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+}
+.nosotros{
+    
+    background-color: #090f3b;
+    background-image: linear-gradient(47deg, #090f3b 0%, #6a9fae 37%, #2e609e 61%, #0d1442 83%, #000128 100%);
+    ;
+}
+.mision{
+    background-color: #9bb3cc;
+
+}
+.vision{
+
+    background-color: #9bb3cc;
 }
 /*---------------------MAIN DE PAG. QUE HACEMOS?---------------------*/
 .imgParrafo2, .imgParrafo1, .imgAurora{
@@ -180,33 +195,7 @@ a{
 .submenuProducto{
    display: none;
 }
-/*
-.mainProductos{
-    display: flex;
-    flex-flow: column wrap;
-    justify-items: center;
-    align-items: center;
-}
-#cables, #canos,#luz,#lamparas,#jeluz,#proteccion,#otros,#guirnaldas{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1rem;
-}
-.product{
-    height: 12.5rem;
-    width: 12.5rem;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
-    border-style: solid;
-    border-width: 2px;
-    display: flex;
-    border-color: rgb(170, 135, 89);
-    text-align: center;
-}*/
+
 /*---------------------MAIN DE PAG. PRESUPUESTO----------------------*/
 .tituloPresupuesto{
     text-align: center;
@@ -235,7 +224,7 @@ a{
     border-color: #142f4d;
     border-width: 0.2rem;
     border-radius: 4%;
-    background-color: #2e609ecb;
+    background-color: #85b9c0;
     gap: 2rem;
 }
 .campo{
@@ -254,7 +243,7 @@ a{
 .botonWhatsapp{
     position: fixed;
     bottom: 0.9rem;
-    right: 0.5rem;
+    right: 1.2rem;
 }
 .botonWhatsapp img{
     height: 3.5rem;
@@ -281,7 +270,7 @@ footer{
     text-align: justify;
 }
 .redes{
-    width: 14rem;
+    width: 15rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -289,6 +278,7 @@ footer{
 .redes h5{
     width: 11rem;
     text-align: left;
+    font-size: small;
 }
 /*Derechos*/
 .derechos{
@@ -300,6 +290,9 @@ footer{
 }
 /*-----------MEDIA QUARIES 600PX--------------*/
 @media screen and (min-width: 600px) {
+    p{
+        font-size: medium;
+    }
     header{
         display: flex;
         height: 8rem;
@@ -311,7 +304,6 @@ footer{
     .informacion{
         display: flex;
         flex-flow: column wrap;
-        
         justify-content: space-evenly;
         font-family: 'Montserrat', sans-serif;
         align-items: center;
@@ -330,6 +322,7 @@ footer{
     .imgParrafo{
         height: 15rem;
     }
+    
     .pagos{
         height: 25rem;
         display: grid;
@@ -403,12 +396,9 @@ footer{
         align-items: center;
     }
     /*Menu*/
-    
-    .menu ul li .submenu{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-items: center;
-        align-items: center;
+    .navbar-nav{
+       margin-top: 3rem;
+       gap: 2rem;
     }
 
     .portada{
