@@ -15,14 +15,13 @@
     <link rel="stylesheet" href="css/main.css">
     <!--Link css animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
     <title>Inicio Gaelec</title>
     <link rel="shortcut icon" href="Imagenes/logochico2.jpg">
 </head>
 <body>
     <!-- Encabezado de todas las paginas -->
-    <div class="contenedor">
-        <header id="inicio">
+    <div class="container-fluid">
+        <header class="row" id="inicio">
             <a href="../Index.html">
                 <img src="Imagenes/logoGaelecMaterElec.png" alt="Gaelec">
             </a>
@@ -62,10 +61,10 @@
         </nav>
         <!--Parte central del Index-->
         <!--Imagen de inicio-->
-        <div class="portada"> </div>
+        <div class="row portada"> </div>
         <!--Columnas centrales del index-->
-        <main class="mainIndex">
-            <div class="columna">
+        <main class="row container-fluid mainIndex">
+            <div class="row columna">
                 <div class="columElec">
                     <img class="imgParrafo" src="Imagenes/icono.jpeg" alt="Materiales Electricos">
                     <h4 class="subtitulo">Materiales <br> Electricos</h4>
@@ -78,7 +77,7 @@
                 </div>
             </div>
             
-            <section class="marcas">
+            <section class="row marcas">
                 <h4 class="subtitulo">Trabajamos con las mejores marcas del mercado</h4>
                 <div class="reels">
                     <img id="marca1" src="Imagenes/jeluz.png" alt="Jeluz">
@@ -90,7 +89,7 @@
                     <img id="marca7" src="Imagenes/tacsa.png" alt="Tacsa">
                 </div>
             </section>
-            <div class="pagos">
+            <div class="row pagos">
                 <h4 id="h4Pagos">Todas las formas de pago</h4>
                 <ul id="ulPagos">
                     <li>Efectivo</li>
@@ -112,7 +111,7 @@
                 </div>
             </div>  
         </main>
-        <footer>
+        <footer class="row">
             <a class="botonWhatsapp" href="https://wa.me/message/WNA2DAIUBEXOG1" target="_blank">
                 <img class="animate__animated animate__heartBeat animate__infinite" src="Imagenes/logoWhatsapp.png" alt="Chat Whatsapp">
             </a>
