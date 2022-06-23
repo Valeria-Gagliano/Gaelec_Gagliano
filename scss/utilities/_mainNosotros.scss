@@ -1,0 +1,67 @@
+//Main pag. Nosotros
+
+.mainNosotros{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h3{
+        font-size: medium;
+        text-align: center;
+    }
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        color: $colorLetra;
+        justify-content: center;
+        padding: 1rem;
+        text-align: justify;
+        gap: 2rem;
+        border-radius: 1rem;
+        background-color: $colorSecundario;
+    }
+    .mision, .vision{
+        color: $colorLetra;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        text-align: justify;
+        gap: 2rem;
+        border-radius: 1rem;
+        background-color: $colorSecundario;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .mainNosotros{
+      margin-left: 7rem;
+      margin-right: 7rem;
+      h3{
+        font-size: 1.5rem;
+      }
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    h3{
+        font-size: 3rem;
+    }
+    .mainNosotros{
+        display: grid;
+        grid-template-areas:"nosotros nosotros"
+                            "mision vision";
+        gap: 4rem;
+        padding: 4rem;
+    }
+    .nosotros{
+        grid-area: nosotros;
+    }
+    .vision{
+        grid-area: vision;
+    }
+    .mision{
+        grid-area: mision;
+    }
+}
