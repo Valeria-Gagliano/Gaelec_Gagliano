@@ -90,7 +90,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 15rem;
+  height: 5rem;
   flex-wrap: wrap; }
   .marcas .reels .marca {
     height: 3.5rem;
@@ -139,7 +139,7 @@ h1 {
       font-size: 1rem;
       font-weight: 600; }
 
-/*Medida de 600 a 1024px*/
+/*-----------MEDIA QUARIES 600PX--------------*/
 @media screen and (min-width: 600px) {
   .portada {
     height: 20rem; }
@@ -171,6 +171,56 @@ h1 {
       flex-direction: row;
       justify-content: center;
       align-items: center; } }
+
+/*-----------MEDIA QUARIES 1000PX--------------*/
+@media screen and (min-width: 1000px) {
+  .mainIndex {
+    display: flex;
+    gap: 4.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .mainIndex .columna {
+      display: flex;
+      gap: 4.5rem;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; }
+      .mainIndex .columna .columElec {
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap; }
+        .mainIndex .columna .columElec img {
+          height: 20rem; }
+        .mainIndex .columna .columElec .parrafoColumna1 {
+          width: 24rem;
+          text-align: justify;
+          padding: 0; }
+        .mainIndex .columna .columElec .parrafoColumna2 {
+          width: 24rem;
+          text-align: justify;
+          padding: 0; }
+    .mainIndex .marca {
+      height: 5rem;
+      width: 8rem; }
+    .mainIndex .pagos {
+      height: 30rem;
+      display: grid;
+      grid-template-areas: "titulo img1 img2" "titulo img1 img2" "texto img1 img2" "texto boton boton" "img3 img3 img3";
+      gap: 0.2rem; }
+      .mainIndex .pagos #ulPagos {
+        font-size: 1.2rem;
+        font-weight: 600; }
+      .mainIndex .pagos #visa {
+        display: flex;
+        justify-content: center;
+        grid-area: img3; }
+        .mainIndex .pagos #visa img {
+          height: 12rem; } }
 
 .submenuProducto, .pagos #visa, header img, header .informacion, header .whatsapp, footer .vuelta {
   display: none; }

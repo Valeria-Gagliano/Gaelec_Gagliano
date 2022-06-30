@@ -41,7 +41,7 @@ h1{
     }
     .reels{
         @include flex(1rem, center, center, row);
-        height: 15rem;
+        height: 5rem;
         flex-wrap: wrap;
         .marca{
             height: 3.5rem;
@@ -93,7 +93,7 @@ h1{
         @extend %desaparecer;
     }
 }
-/*Medida de 600 a 1024px*//////////////////////////
+/*-----------MEDIA QUARIES 600PX--------------*/
 
 @media screen and (min-width: 600px){
     .portada{
@@ -138,3 +138,57 @@ h1{
     
 }
 
+/*-----------MEDIA QUARIES 1000PX--------------*/
+@media screen and (min-width: 1000px){
+
+    .mainIndex{
+        @include flex(4.5rem, center, center, column);
+        .columna{
+            @include flex(4.5rem, center, center, row);
+            flex-wrap: nowrap;
+            .columElec{
+                @include flex(3rem, center, center, column);
+                flex-wrap: nowrap;
+                img{
+                    height: 20rem;
+                }
+                .parrafoColumna1{
+                    width: 24rem;
+                    text-align: justify;
+                    padding: 0;
+                }
+                .parrafoColumna2{
+                    width: 24rem;
+                    text-align: justify;
+                    padding: 0;
+                }
+            }
+        }
+        .marca{
+            height: 5rem;
+            width: 8rem;
+        }
+        .pagos{
+            height: 30rem;
+            display: grid;
+            grid-template-areas:"titulo img1 img2"
+                                "titulo img1 img2"
+                                "texto img1 img2"
+                                "texto boton boton"
+                                "img3 img3 img3";
+            gap: 0.2rem;
+            #ulPagos{
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+            #visa{
+                display: flex;
+                justify-content: center;
+                grid-area: img3;
+                img{
+                    height: 12rem;
+                }
+            }
+        }
+    }
+}
