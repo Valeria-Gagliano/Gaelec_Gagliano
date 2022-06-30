@@ -1,33 +1,27 @@
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/extend";
+
 //Main pag. Nosotros
 
 .mainNosotros{
+    @include flex(2rem, center, justify, column);
     margin: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
     h3{
         font-size: medium;
         text-align: center;
     }
     .nosotros{
-        display: flex;
-        flex-direction: column;
+        @include flex(2rem, center, justify, column);
         color: $colorLetra;
-        justify-content: center;
         padding: 1rem;
-        text-align: justify;
-        gap: 2rem;
         border-radius: 1rem;
         background-color: $colorSecundario;
     }
     .mision, .vision{
         color: $colorLetra;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex(2rem, center, justify, column);
         padding: 1rem;
-        text-align: justify;
-        gap: 2rem;
         border-radius: 1rem;
         background-color: $colorSecundario;
     }

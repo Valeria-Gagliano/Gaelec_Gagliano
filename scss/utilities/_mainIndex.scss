@@ -1,0 +1,140 @@
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/extend";
+
+
+//Main pag. Index
+/*Medida de 320 a 600px*/
+/*Portada*/
+.portada{
+    @include flex(0px, center, center, row);
+    height: 10rem;
+    background-image: url(../Imagenes/contacto2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Main*/
+h1{
+    @extend %separacionSuperior;
+    text-align: center;
+    font-size: 2.2rem;
+}
+.columElec{
+    @include flex(1.5rem, center, center, column);
+    margin: 2rem;
+    @extend %separacionSuperior;
+    .imgParrafo{
+        height: 10rem;
+    }
+    h3{
+        font-size: 1.7rem;
+    }
+   p{
+    @include parrafo(1rem);
+   }
+}
+/*Marcas*/
+.marcas{
+    h3{
+        font-size: 1.7rem; 
+        text-align: center;
+    }
+    .reels{
+        @include flex(1rem, center, center, row);
+        height: 15rem;
+        flex-wrap: wrap;
+        .marca{
+            height: 3.5rem;
+            width: 5rem;
+        }
+    }
+}
+/*Formas de Pago*/
+.pagos{
+    height: 19rem;
+    display: grid;
+    grid-template-areas:"titulo img1"
+                        "texto boton"
+                        "texto boton";
+    @extend %separacionSuperior;
+    #h3Pagos{
+        @include flex(0px, center, center, row);
+        text-align: center;
+        grid-area: titulo;
+    }
+    #ulPagos{
+        @include flex(0, center, center, column);
+        grid-area: texto;
+        font-weight: 500;
+    }
+    #postnet{
+        grid-area: img1;
+        img{
+            height: 8rem;
+        }
+    }
+    #efectivo{
+        display: none;
+    }
+    #consulta{
+        @include flex(0, center, center, column);
+        grid-area: boton;
+        .botonConsulta{
+            width: 8rem;
+            background-color: $colorBotonSecundario;
+            padding: 0.7rem;
+            text-align: center;
+            border-radius: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+    #visa{
+        @extend %desaparecer;
+    }
+}
+/*Medida de 600 a 1024px*//////////////////////////
+
+@media screen and (min-width: 600px){
+    .portada{
+        height: 20rem;
+    }
+    .columElec{
+        p{
+            @include parrafo(1.12rem);
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+        img{
+            height: 15rem;
+        }
+    }
+    .pagos{
+        height: 25rem;
+        display: grid;
+        grid-template-areas:"titulo img1"
+                            "texto img1"
+                            "boton img2"
+                            "boton img2";
+        #efectivo{
+            display: flex;
+            grid-area: img2;
+            img{
+                display: flex;
+                height: 12rem;
+            }
+        }
+        #postnet{
+            display: flex;
+            justify-content: left;
+            img{
+                height: 12rem;
+            }
+        }
+        #consulta{
+            @include flex(0, center, center, row);
+        }
+    }
+    
+}
+

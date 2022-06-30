@@ -1,29 +1,211 @@
-.mainNosotros {
-  margin: 2rem;
+.submenuProducto, .pagos #visa, header img, header .informacion, header .whatsapp, footer .vuelta {
+  display: none; }
+
+h1, .columElec, .pagos {
+  margin-top: 3rem; }
+
+.submenuProducto, .pagos #visa, header img, header .informacion, header .whatsapp, footer .vuelta {
+  display: none; }
+
+h1, .columElec, .pagos {
+  margin-top: 3rem; }
+
+.submenuProducto, .pagos #visa, header img, header .informacion, header .whatsapp, footer .vuelta {
+  display: none; }
+
+h1, .columElec, .pagos {
+  margin-top: 3rem; }
+
+/*Main de pag. Productos*/
+/*Medida de 320 a 600px*/
+/*Medida de 600 a 1000px*/
+@media screen and (min-width: 600px) {
+  .campoGrande {
+    height: 12rem;
+    width: 25rem;
+    border: none; } }
+
+/*Medida de 1000px a Max*/
+@media screen and (min-width: 1000px) {
+  .submenuProducto {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+.submenuProducto, .pagos #visa, header img, header .informacion, header .whatsapp, footer .vuelta {
+  display: none; }
+
+h1, .columElec, .pagos {
+  margin-top: 3rem; }
+
+.submenuProducto, .pagos #visa, header img, header .informacion, header .whatsapp, footer .vuelta {
+  display: none; }
+
+h1, .columElec, .pagos {
+  margin-top: 3rem; }
+
+/*Medida de 320 a 600px*/
+/*Portada*/
+.portada {
   display: flex;
+  gap: 0px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  background-image: url(../Imagenes/contacto2.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*Main*/
+h1 {
+  text-align: center;
+  font-size: 2.2rem; }
+
+.columElec {
+  display: flex;
+  gap: 1.5rem;
   flex-direction: column;
-  gap: 2rem; }
+  justify-content: center;
+  align-items: center;
+  margin: 2rem; }
+  .columElec .imgParrafo {
+    height: 10rem; }
+  .columElec h3 {
+    font-size: 1.7rem; }
+  .columElec p {
+    font-size: 1rem;
+    text-align: justify; }
+
+/*Marcas*/
+.marcas h3 {
+  font-size: 1.7rem;
+  text-align: center; }
+
+.marcas .reels {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  flex-wrap: wrap; }
+  .marcas .reels .marca {
+    height: 3.5rem;
+    width: 5rem; }
+
+/*Formas de Pago*/
+.pagos {
+  height: 19rem;
+  display: grid;
+  grid-template-areas: "titulo img1" "texto boton" "texto boton"; }
+  .pagos #h3Pagos {
+    display: flex;
+    gap: 0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: titulo; }
+  .pagos #ulPagos {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: texto;
+    font-weight: 500; }
+  .pagos #postnet {
+    grid-area: img1; }
+    .pagos #postnet img {
+      height: 8rem; }
+  .pagos #efectivo {
+    display: none; }
+  .pagos #consulta {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: boton; }
+    .pagos #consulta .botonConsulta {
+      width: 8rem;
+      background-color: #e6cc3e;
+      padding: 0.7rem;
+      text-align: center;
+      border-radius: 1rem;
+      font-size: 1rem;
+      font-weight: 600; }
+
+/*Medida de 600 a 1024px*/
+@media screen and (min-width: 600px) {
+  .portada {
+    height: 20rem; }
+  .columElec p {
+    font-size: 1.12rem;
+    text-align: justify;
+    padding-left: 8rem;
+    padding-right: 8rem; }
+  .columElec img {
+    height: 15rem; }
+  .pagos {
+    height: 25rem;
+    display: grid;
+    grid-template-areas: "titulo img1" "texto img1" "boton img2" "boton img2"; }
+    .pagos #efectivo {
+      display: flex;
+      grid-area: img2; }
+      .pagos #efectivo img {
+        display: flex;
+        height: 12rem; }
+    .pagos #postnet {
+      display: flex;
+      justify-content: left; }
+      .pagos #postnet img {
+        height: 12rem; }
+    .pagos #consulta {
+      display: flex;
+      gap: 0;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }
+
+.submenuProducto, .pagos #visa, header img, header .informacion, header .whatsapp, footer .vuelta {
+  display: none; }
+
+h1, .columElec, .pagos {
+  margin-top: 3rem; }
+
+.mainNosotros {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: justify;
+  margin: 2rem; }
   .mainNosotros h3 {
     font-size: medium;
     text-align: center; }
   .mainNosotros .nosotros {
     display: flex;
-    flex-direction: column;
-    color: #ffffff;
-    justify-content: center;
-    padding: 1rem;
-    text-align: justify;
     gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: justify;
+    color: #ffffff;
+    padding: 1rem;
     border-radius: 1rem;
     background-color: #476d9c; }
   .mainNosotros .mision, .mainNosotros .vision {
     color: #ffffff;
     display: flex;
+    gap: 2rem;
     flex-direction: column;
     justify-content: center;
+    align-items: justify;
     padding: 1rem;
-    text-align: justify;
-    gap: 2rem;
     border-radius: 1rem;
     background-color: #476d9c; }
 
@@ -60,38 +242,27 @@ a {
   font-family: 'Montserrat', sans-serif;
   font-size: small; }
 
-p {
-  font-size: 0.8rem;
-  text-align: justify; }
-
-header {
-  height: 5rem;
-  margin-bottom: 2rem;
-  display: inline-block; }
-  header img {
-    height: 5rem;
-    margin: 0.5rem; }
-  header .informacion {
-    display: none; }
-  header .whatsapp {
-    display: none; }
-
 nav {
-  width: 15rem;
   margin: 0;
   padding: 0;
-  margin-left: 1rem; }
-  nav .nav-link {
-    color: white; }
-  nav .submenu li {
-    margin: 0.5rem;
-    background-color: #000128;
-    border-radius: 1rem;
-    text-align: center;
-    list-style: none;
-    width: 12rem;
+  margin-left: 0.5rem; }
+  nav .navbar-brand {
+    height: 5rem;
+    margin: 1rem; }
+    nav .navbar-brand img {
+      height: 5rem; }
+  nav .navbar-toggler {
     position: relative;
-    left: 3rem; }
+    right: 1rem; }
+  nav .nav-link {
+    color: #ffffff; }
+  nav .submenu {
+    background-color: #000128;
+    position: relative;
+    flex-wrap: wrap; }
+    nav .submenu li {
+      text-align: center;
+      list-style: none; }
 
 .subtitulo {
   font-size: 1.2rem;
@@ -101,17 +272,17 @@ footer {
   text-align: center;
   background-color: #000128;
   background-image: linear-gradient(320deg, #000128 10%, #090f3b 33%, #476d9c 66%, #8288a0 100%);
-  color: white;
+  color: #ffffff;
   padding: 0.5rem;
   margin-top: 3rem; }
   footer .botonWhatsapp {
+    width: 4rem;
+    display: flex;
     position: fixed;
     bottom: 0.9rem;
     right: 1.2rem; }
     footer .botonWhatsapp img {
       height: 3rem; }
-  footer .vuelta {
-    display: none; }
   footer .menuRedes {
     list-style: none;
     display: flex;
@@ -142,31 +313,6 @@ footer {
     font-size: x-small; }
 
 @media screen and (min-width: 600px) {
-  p {
-    font-size: medium; }
-  header {
-    display: flex;
-    height: 8rem;
-    justify-content: space-evenly;
-    text-align: center; }
-    header img {
-      height: 5.8rem; }
-    header h1 {
-      font-family: "Montserrat", sans-serif;
-      align-items: center;
-      font-size: small; }
-    header h2 {
-      font-size: small; }
-    header .informacion {
-      margin-top: 2rem;
-      display: flex;
-      flex-flow: column wrap;
-      font-family: "Montserrat", sans-serif;
-      align-items: center;
-      justify-content: center;
-      font-size: small; }
-    header .horario {
-      text-decoration: underline; }
   navbar-nav {
     gap: 2rem; }
   nav .submenu {
@@ -174,29 +320,60 @@ footer {
     nav .submenu li {
       left: 9rem; }
   footer .vuelta {
-    display: block;
+    display: flex;
     height: 3rem;
     position: fixed;
     bottom: 1rem;
     left: 1rem; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
   header {
+    margin: 0.5rem;
+    display: flex;
+    height: 8rem;
+    text-align: center;
     gap: 9rem;
-    justify-content: space-evenly; }
+    justify-content: space-between; }
     header img {
+      display: flex;
       height: 9rem; }
-    header h1, header h2 {
+    header h2 {
+      color: #9acfce;
+      font-family: "Montserrat", sans-serif;
+      align-items: center;
+      font-size: 1.14rem;
+      font-weight: 600; }
+    header h3 {
       font-size: medium; }
+    header .informacion {
+      height: 10rem;
+      display: flex;
+      gap: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Montserrat", sans-serif; }
+    header .horario {
+      text-decoration: underline; }
     header .whatsapp {
       display: flex;
+      gap: 0;
+      flex-direction: column;
       justify-content: center;
-      align-items: end; }
+      align-items: end;
+      position: relative;
+      top: 1rem;
+      right: 1rem; }
+  nav .navbar-brand img {
+    display: none; }
   nav .submenu {
-    width: 60rem;
+    background-color: #ffffff;
+    width: 50rem;
     justify-content: space-evenly; }
     nav .submenu li {
-      left: 0; }
+      border-radius: 1rem;
+      background-color: #000128;
+      padding: 0.3rem; }
   footer {
     padding: 2rem; }
     footer .botonWhatsapp img {

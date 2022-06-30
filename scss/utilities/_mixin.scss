@@ -1,0 +1,32 @@
+@import "utilities/variables";
+
+
+//mixin sin parametros
+@mixin parrafo($tamaño){
+    font-size: $tamaño;
+    text-align: justify;
+}
+@mixin reset{
+    margin: 0;
+    padding: 0;
+}
+
+//mixin con parametros
+
+
+@mixin flex($distancia, $contenido, $alinacion, $direccion){
+    display: flex;
+    gap: $distancia;
+    flex-direction: $direccion;
+    justify-content: $contenido;
+    align-items: $alinacion;
+}
+
+@mixin box($width, $heigth, $color){
+    width: $width;
+    height: $heigth;
+    color: $color;
+}
+
+
+

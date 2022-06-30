@@ -1,0 +1,31 @@
+@import "variables";
+
+
+//Extend
+
+%botones{
+    border-radius: 1rem;
+    background-color: $colorPrincipal;
+    padding: 0.5rem;
+    margin: 1rem;
+    color: $colorLetra;
+    box-shadow: 1px 1px grey;
+}
+
+%desaparecer{
+    display: none;
+}
+
+%justificado{
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+%separacionSuperior{
+    margin-top: 3rem;
+}
+
+%sinEstilo{
+    list-style: none;
+    text-decoration: none;
+}
