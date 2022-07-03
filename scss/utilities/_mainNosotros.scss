@@ -6,24 +6,30 @@
 
 .mainNosotros{
     @include flex(2rem, center, justify, column);
-    margin: 2rem;
-    h3{
-        font-size: medium;
+    margin: 1rem;
+    .h1Nosotros, h3{
+        font-size: 1.5rem;
         text-align: center;
     }
     .nosotros{
-        @include flex(2rem, center, justify, column);
+        @include flex(1rem, center, justify, column);
         color: $colorLetra;
         padding: 1rem;
         border-radius: 1rem;
         background-color: $colorSecundario;
+        p{
+            text-align: justify;
+        }
     }
     .mision, .vision{
         color: $colorLetra;
-        @include flex(2rem, center, justify, column);
+        @include flex(1rem, center, justify, column);
         padding: 1rem;
         border-radius: 1rem;
         background-color: $colorSecundario;
+        p{
+            text-align: justify;
+        }
     }
 }
 
@@ -37,9 +43,8 @@
     }
 }
 
-@media screen and (min-width: 1024px){
-
-    h3{
+@media screen and (min-width: 1000px){
+    .h1Nosotros, h3{
         font-size: 3rem;
     }
     .mainNosotros{
@@ -47,7 +52,6 @@
         grid-template-areas:"nosotros nosotros"
                             "mision vision";
         gap: 4rem;
-        padding: 4rem;
     }
     .nosotros{
         grid-area: nosotros;

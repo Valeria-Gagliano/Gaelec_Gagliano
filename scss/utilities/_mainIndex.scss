@@ -6,82 +6,78 @@
 //Main pag. Index
 /*Medida de 320 a 600px*/
 /*Portada*/
-.portada{
-    @include flex(0px, center, center, row);
-    height: 10rem;
-    background-image: url(../Imagenes/contacto2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.carrusel{
+   display: flex;
+   padding: 0.5rem;
 }
 /*Main*/
-h1{
+.h1Index{
     @extend %separacionSuperior;
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 1.3rem;
+    background-color: $colorSecundario;
+    padding: 0.5rem;
 }
-.columElec{
-    @include flex(1.5rem, center, center, column);
-    margin: 2rem;
-    @extend %separacionSuperior;
-    .imgParrafo{
-        height: 10rem;
-    }
-    h3{
-        font-size: 1.7rem;
-    }
-   p{
-    @include parrafo(1rem);
-   }
+.columna{
+    @include flex(0rem, center, center, column);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
 }
 /*Marcas*/
 .marcas{
     h3{
-        font-size: 1.7rem; 
+        font-size: 1.3rem; 
         text-align: center;
+        background-color: $colorSecundario;
+        padding: 0.5rem;
+    }
+    .slide{
+        width: 20rem;
     }
     .reels{
+        @extend %separacionSuperior;
         @include flex(1rem, center, center, row);
-        height: 5rem;
+        height: 3rem;
         flex-wrap: wrap;
         .marca{
-            height: 3.5rem;
+            height: 5rem;
             width: 5rem;
         }
     }
 }
 /*Formas de Pago*/
 .pagos{
-    height: 19rem;
     display: grid;
-    grid-template-areas:"titulo img1"
-                        "texto boton"
-                        "texto boton";
+    grid-template-areas:"titulo titulo"
+                        "img1 img1"
+                        "img2 img2"
+                        "boton boton";
     @extend %separacionSuperior;
+    gap: 1rem;
+    justify-items: center;
     #h3Pagos{
-        @include flex(0px, center, center, row);
         text-align: center;
         grid-area: titulo;
     }
-    #ulPagos{
-        @include flex(0, center, center, column);
-        grid-area: texto;
-        font-weight: 500;
-    }
-    #postnet{
+    #formasPagos{
         grid-area: img1;
+        img{
+            height: 6.5rem;
+        }
+    }
+    #pagoTarjeta{
+        grid-area: img2;
         img{
             height: 8rem;
         }
     }
-    #efectivo{
-        display: none;
-    }
     #consulta{
-        @include flex(0, center, center, column);
+        @include flex(0, center, center, row);
         grid-area: boton;
         .botonConsulta{
             width: 8rem;
-            background-color: $colorBotonSecundario;
+            background-color: $colorPrincipal;
             padding: 0.7rem;
             text-align: center;
             border-radius: 1rem;
@@ -89,50 +85,36 @@ h1{
             font-weight: 600;
         }
     }
-    #visa{
-        @extend %desaparecer;
-    }
+    
 }
 /*-----------MEDIA QUARIES 600PX--------------*/
 
 @media screen and (min-width: 600px){
-    .portada{
-        height: 20rem;
+    .columna{
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
-    .columElec{
-        p{
-            @include parrafo(1.12rem);
-            padding-left: 8rem;
-            padding-right: 8rem;
-        }
-        img{
-            height: 15rem;
+    .marcas{
+        .slide{
+            height: 7rem;
+            width: 32rem;
         }
     }
     .pagos{
-        height: 25rem;
         display: grid;
-        grid-template-areas:"titulo img1"
-                            "texto img1"
-                            "boton img2"
-                            "boton img2";
-        #efectivo{
-            display: flex;
-            grid-area: img2;
+        grid-template-areas:"titulo titulo"
+                            "img1 img1"
+                            "img2 img2"
+                            "boton boton";
+        #pagoTarjeta{
             img{
-                display: flex;
-                height: 12rem;
+                height: 14rem;
             }
         }
-        #postnet{
-            display: flex;
-            justify-content: left;
+        #formasPagos{
             img{
-                height: 12rem;
+                height: 12.5rem;
             }
-        }
-        #consulta{
-            @include flex(0, center, center, row);
         }
     }
     
@@ -140,54 +122,58 @@ h1{
 
 /*-----------MEDIA QUARIES 1000PX--------------*/
 @media screen and (min-width: 1000px){
-
+    .carrusel{
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
     .mainIndex{
-        @include flex(4.5rem, center, center, column);
+        @include flex(3rem, center, center, column);
+        .h1Index{
+            background-color: white;
+            font-size: 2rem;
+        }
         .columna{
-            @include flex(4.5rem, center, center, row);
-            flex-wrap: nowrap;
-            .columElec{
-                @include flex(3rem, center, center, column);
-                flex-wrap: nowrap;
-                img{
-                    height: 20rem;
-                }
-                .parrafoColumna1{
-                    width: 24rem;
-                    text-align: justify;
-                    padding: 0;
-                }
-                .parrafoColumna2{
-                    width: 24rem;
-                    text-align: justify;
-                    padding: 0;
+            padding-left: 12rem;
+            padding-right: 12rem;
+        }
+        .marcas{
+            h3{
+                background-color: white;
+                font-size: 2rem;
+            }
+            .slide{
+                width: 50rem;
+            }
+            .carousel{
+                height: 10rem;
+                .carousel-inner{
+                    .carousel-item{
+                        img{
+                            height: 5rem;
+                        }
+                    }
                 }
             }
-        }
-        .marca{
-            height: 5rem;
-            width: 8rem;
+            .marca{
+                height: 5rem;
+                width: 8rem;
+            }
         }
         .pagos{
-            height: 30rem;
             display: grid;
-            grid-template-areas:"titulo img1 img2"
-                                "titulo img1 img2"
-                                "texto img1 img2"
-                                "texto boton boton"
-                                "img3 img3 img3";
-            gap: 0.2rem;
+            grid-template-areas:"titulo titulo titulo"
+                                "img 1 img1 img1"
+                                "img2 img2 img2"
+                                "texto boton boton";
             #ulPagos{
-                font-size: 1.2rem;
-                font-weight: 600;
+                font-size: 1rem;
+                font-weight: 500;
             }
-            #visa{
-                display: flex;
-                justify-content: center;
-                grid-area: img3;
-                img{
-                    height: 12rem;
-                }
+            #formasPagos{
+                grid-area: img1;
+               
             }
         }
     }

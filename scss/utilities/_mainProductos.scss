@@ -5,10 +5,10 @@
 /*Main de pag. Productos*/
 
 /*Medida de 320 a 600px*/
-.submenuProducto{
-    @extend %desaparecer;
-}
-
+ .h1productos{
+    text-align: center;
+    background-color: white;
+ }
 /*Medida de 600 a 1000px*/
 @media screen and (min-width: 600px) {
     .campoGrande{
@@ -17,10 +17,9 @@
         border: none;
     }
 }
-
 /*Medida de 1000px a Max*/
 @media screen and (min-width: 1000px) {
-    .submenuProducto{
-        @include flex(1rem, center, center, column)
+    .productos{
+        font-size: 2rem;
     }
 }

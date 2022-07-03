@@ -1,3 +1,75 @@
 @import "utilities/variables";
 @import "utilities/mixin";
 @import "utilities/extend";
+/*Main de pag. Presupuesto*/
+
+.tituloPresupuesto{
+    text-align: center;
+    margin: 2rem;
+    background-color: white;
+}
+
+.mainPresupuesto{
+    @include flex(1rem, center, center, row);
+    text-align: center;
+    .bordePresupuesto{
+        margin: 1rem;
+        padding: 1.5rem;
+        @include flex(2rem, space-between,center,  column);
+        flex-wrap: wrap;
+        border-style: solid;
+        border-color: $colorPrincipal;
+        border-width: 0.2rem;
+        border-radius: 4%;
+        background-color: $colorTerciario;
+        .campo{
+            padding: 0.8rem;
+            border-radius: 1rem;
+            border: none;
+        }
+        .campoGrande{
+            height: 10rem;
+            border-radius: 1rem;
+            border: none;
+        }
+    }
+    .imgPresupuesto{
+        display: none;
+    }
+}
+.presupuestoMensaje{
+    p{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 600px){
+    .mainPresupuesto{
+        .bordePresupuesto{
+            .campoGrande{
+                height: 12rem;
+                width: 25rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1000px){
+    .tituloPresupuesto{
+        font-size: 2rem;
+    }
+    .mainPresupuesto{
+        .bordePresupuesto{
+            .campoGrande{
+                width: 30rem;
+            }
+        }
+        .imgPresupuesto{
+            display: flex;
+        }
+    }
+    .presupuestoMensaje{
+        margin: 2rem;
+        p{
+            font-size: medium;
+        }
+    }
+}
