@@ -1,19 +1,67 @@
 footer .vuelta {
   display: none; }
 
-.h1Index, .marcas .reels, .pagos {
+.parrafoCompras, .h1Index, .marcas .reels, .pagos {
   margin-top: 3rem; }
 
 footer .vuelta {
   display: none; }
 
-.h1Index, .marcas .reels, .pagos {
+.parrafoCompras, .h1Index, .marcas .reels, .pagos {
   margin-top: 3rem; }
+
+.mainHacemos {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainHacemos .tituloComprar {
+    text-align: center; }
+  .mainHacemos .parrafoComprar {
+    text-align: justify;
+    padding: 1.5rem; }
+  .mainHacemos .pasosCompra {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap; }
+    .mainHacemos .pasosCompra .imgCompra {
+      height: 15rem;
+      border-radius: 1rem; }
+
+.parrafoCompras .tituloFila2 {
+  text-align: center; }
+
+.parrafoCompras .parrafoComprar2 {
+  text-align: justify;
+  padding: 1.5rem; }
+
+@media screen and (min-width: 600px) {
+  .mainHacemos .parrafoComprar {
+    padding: 3rem; }
+  .mainHacemos .pasosCompra .imgCompra {
+    height: 18rem; }
+  .parrafoCompras .parrafoComprar2 {
+    padding: 3rem; } }
+
+@media screen and (min-width: 1000px) {
+  .mainHacemos .parrafoComprar {
+    padding: 1.5rem;
+    padding-left: 12rem;
+    padding-right: 12rem; }
+  .parrafoCompras .parrafoComprar2 {
+    padding: 1.5rem;
+    padding-left: 12rem;
+    padding-right: 12rem; } }
 
 footer .vuelta {
   display: none; }
 
-.h1Index, .marcas .reels, .pagos {
+.parrafoCompras, .h1Index, .marcas .reels, .pagos {
   margin-top: 3rem; }
 
 /*Main de pag. Productos*/
@@ -37,7 +85,7 @@ footer .vuelta {
 footer .vuelta {
   display: none; }
 
-.h1Index, .marcas .reels, .pagos {
+.parrafoCompras, .h1Index, .marcas .reels, .pagos {
   margin-top: 3rem; }
 
 /*Main de pag. Presupuesto*/
@@ -101,7 +149,7 @@ footer .vuelta {
 footer .vuelta {
   display: none; }
 
-.h1Index, .marcas .reels, .pagos {
+.parrafoCompras, .h1Index, .marcas .reels, .pagos {
   margin-top: 3rem; }
 
 /*Medida de 320 a 600px*/
@@ -240,7 +288,7 @@ footer .vuelta {
 footer .vuelta {
   display: none; }
 
-.h1Index, .marcas .reels, .pagos {
+.parrafoCompras, .h1Index, .marcas .reels, .pagos {
   margin-top: 3rem; }
 
 .mainNosotros {
