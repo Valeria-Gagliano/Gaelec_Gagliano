@@ -172,6 +172,7 @@
             }
         }
         .pagos{
+            gap: 5rem;
             display: grid;
             grid-template-areas:"titulo titulo"
                                 "img2  img1"
