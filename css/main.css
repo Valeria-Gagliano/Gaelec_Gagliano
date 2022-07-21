@@ -277,15 +277,15 @@ footer .vuelta {
   .mainHacemos .parrafoComprar {
     font-size: 1.2rem;
     padding: 1.5rem;
-    padding-left: 12rem;
-    padding-right: 12rem; }
+    padding-left: 16rem;
+    padding-right: 16rem; }
   .parrafoCompras .tituloMayoristas {
     font-size: 2rem; }
   .parrafoCompras .parrafoComprar2 {
     font-size: 1.2rem;
     padding: 1.5rem;
-    padding-left: 12rem;
-    padding-right: 12rem; } }
+    padding-left: 16rem;
+    padding-right: 16rem; } }
 
 footer .vuelta {
   display: none; }
