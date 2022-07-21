@@ -2,13 +2,11 @@
 @import "utilities/mixin";
 @import "utilities/extend";
 /*Main de pag. Presupuesto*/
-
 .tituloPresupuesto{
     text-align: center;
     margin: 2rem;
-    background-color: white;
+    font-size: ($fuenteTamano320 + 0.3rem);
 }
-
 .mainPresupuesto{
     @include flex(1rem, center, center, row);
     text-align: center;
@@ -38,11 +36,14 @@
     }
 }
 .presupuestoMensaje{
-    p{
-        text-align: center;
-    }
+    margin: 1rem;
+    font-size: ($fuenteTamano320 - 0.5rem);
+    text-align: center;
 }
 @media screen and (min-width: 600px){
+    .tituloPresupuesto{
+        font-size: ($fuenteTamano600 + 0.3rem);
+    }
     .mainPresupuesto{
         .bordePresupuesto{
             .campoGrande{
@@ -51,10 +52,13 @@
             }
         }
     }
+    .presupuestoMensaje{
+        font-size: ($fuenteTamano600 - 0.8rem);
+    }
 }
 @media screen and (min-width: 1000px){
     .tituloPresupuesto{
-        font-size: 2rem;
+        font-size: ($fuenteTamano1000 +0.3rem);
     }
     .mainPresupuesto{
         .bordePresupuesto{
@@ -64,12 +68,11 @@
         }
         .imgPresupuesto{
             display: flex;
+            height: 26rem;
         }
     }
     .presupuestoMensaje{
         margin: 2rem;
-        p{
-            font-size: medium;
-        }
+        font-size: ($fuenteTamano1000 - 0.8rem);
     }
 }

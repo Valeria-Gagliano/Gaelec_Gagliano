@@ -6,6 +6,7 @@
     @include flex(2rem,center,center,column);
     .tituloComprar{
         text-align: center;
+        font-size: ($fuenteTamano320 + 0.3rem);
     }
     .parrafoComprar{
         text-align: justify;
@@ -23,8 +24,9 @@
 }
 .parrafoCompras{
     @extend %separacionSuperior;
-    .tituloFila2{
+    .tituloMayoristas{
         text-align: center;
+        font-size: $fuenteTamano320;
     }
     .parrafoComprar2{
         text-align: justify;
@@ -34,6 +36,9 @@
 
 @media screen and (min-width: 600px){
     .mainHacemos{
+        .tituloComprar{
+            font-size: ($fuenteTamano600 + 0.3rem);
+        }
         .parrafoComprar{
             padding: 3rem;
         }
@@ -44,15 +49,20 @@
        }
     }
     .parrafoCompras{
+        .tituloMayoristas{
+            font-size: $fuenteTamano600;
+        }
         .parrafoComprar2{
             padding: 3rem;
         }
     }
     
 }
-
 @media screen and (min-width: 1000px){
     .mainHacemos{
+        .tituloComprar{
+            font-size: ($fuenteTamano1000 + 0.3rem);
+        }
         .parrafoComprar{
             padding: 1.5rem;
             padding-left: 12rem;
@@ -60,6 +70,9 @@
         }
     }
     .parrafoCompras{
+        .tituloMayoristas{
+            font-size: $fuenteTamano1000;
+        }
         .parrafoComprar2{
             padding: 1.5rem;
             padding-left: 12rem;

@@ -1,25 +1,55 @@
 @import "utilities/variables";
-@import "utilities/mixin";
 @import "utilities/extend";
-
 /*Main de pag. Productos*/
 
 /*Medida de 320 a 600px*/
- .h1productos{
+
+.h1Productos{
+    @extend  %separacionSuperior;
     text-align: center;
-    background-color: white;
+    font-size: ($fuenteTamano320 + 0.3rem) ;
  }
+ div .conteiner{
+    @extend  %separacionSuperior;
+ }
+.card{
+    padding: 0.8rem;
+    border-color: $colorTerciario;
+    border-width: 0.2rem;
+    width: 12rem;
+    height: 16rem;
+    .card-img-top{
+        display: flex;
+        justify-content: center;
+    }
+    .card-text{
+        font-size: ($fuenteTamano320 - 0.5rem);
+    }
+}
+
 /*Medida de 600 a 1000px*/
 @media screen and (min-width: 600px) {
-    .campoGrande{
-        height: 12rem;
-        width: 25rem;
-        border: none;
+    .h1Productos{
+        font-size: ($fuenteTamano600 + 0.3rem);
     }
+   .card{
+        width: 13rem;
+        height: 17rem;
+        .card-text{
+            font-size: ($fuenteTamano600 - 0.6rem);
+        }
+   }
 }
 /*Medida de 1000px a Max*/
 @media screen and (min-width: 1000px) {
-    .productos{
-        font-size: 2rem;
+    .h1Productos{
+        font-size: ($fuenteTamano1000 + 0.3rem);
     }
+   .card{
+        width: 14.5rem;
+        height: 20rem;
+        .card-text{
+            font-size: ($fuenteTamano1000 - 0.5rem);
+        }
+   }
 }

@@ -2,22 +2,23 @@
 @import "utilities/variables";
 @import "utilities/mixin";
 @import "utilities/extend";
+@import "utilities/mainIndex";
+@import "utilities/mainNosotros";
 @import "utilities/mainComprar";
 @import "utilities/mainProductos";
 @import "utilities/mainPresupuesto";
-@import "utilities/mainIndex";
-@import "utilities/mainNosotros";
 
 //Codigo general a todos los HTML
+/*Encabezado*/
 *{
     @include reset;
     box-sizing: border-box;
+    font-family: $fuentePrincipal;
 }
 a{
     color: white;
-   text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: small;
+    text-decoration: none;
+    font-size: $fuenteTamano320;
 }
 nav{
     @include reset;
@@ -47,9 +48,10 @@ nav{
    }
 }
 .subtitulo{
-    font-size: 1.2rem;
+    font-size: $fuenteTamano320;
     text-align: center;
 }
+/*Pie de Pagina*/
 footer{
     text-align: center;
     background-color: $colorPrincipal;
@@ -83,11 +85,11 @@ footer{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        h5{
+        h3{
             width: 11rem;
             margin-bottom: 0.5rem;
             text-align: left;
-            font-size: small;
+            font-size: ($fuenteTamano320 - 0.3rem);
         }
         img{
             width: 2rem;
@@ -95,14 +97,14 @@ footer{
         }
     }
     .derechos{
-        font-family: $fuenteInformacion;
         font-weight: lighter;
         display: block;
         text-align: center;
         padding-top: 1rem;
-        font-size:x-small;
+        font-size: 0.8rem;
     }
 }
+/*-------------Medida a partir de los 600px-------------*/
 @media screen and (min-width: 600px) {
     navbar-nav{
         gap: 2rem;
@@ -110,9 +112,6 @@ footer{
     nav{
         .submenu{
             justify-content: space-evenly;
-            li{
-                left: 9rem;
-            }
         }
     }
     footer{
@@ -133,11 +132,12 @@ footer{
             bottom: 1.1rem;
             right: 1rem;
             img{
-                height: 2.5rem;
+                height: 2.8rem;
             }
         }
     }
 }
+/*------------Medida a partir de los 1000px--------------*/
 @media screen and (min-width: 1000px){
     nav{
         gap: 7rem;
@@ -169,12 +169,12 @@ footer{
         .botonWhatsapp, .vuelta {
             right: 2rem;
             img{
-                height: 3.8rem;
-                width: 3.8rem;
+                height: 3.1rem;
+                width: 3.2rem;
             }
         } 
-        h5{
-            font-size: medium;
+        h3{
+            font-size: $fuenteTamano600;
         }
     }
 }

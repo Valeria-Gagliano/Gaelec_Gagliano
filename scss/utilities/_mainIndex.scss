@@ -2,9 +2,8 @@
 @import "utilities/mixin";
 @import "utilities/extend";
 
-
 //Main pag. Index
-/*Medida de 320 a 600px*/
+/*Main Index de 320 a 600px*/
 /*Portada*/
 .carrusel{
    display: flex;
@@ -16,25 +15,25 @@
     .h1Index{
         @extend %separacionSuperior;
         text-align: center;
-        font-size: 1.3rem;
+        font-size: ($fuenteTamano320 + 0.3rem);
         padding: 0.5rem;
     }
     .columna{
         @include flex(0rem, center, center, column);
         padding-left: 4rem;
         padding-right: 4rem;
-        
     }
     /*Marcas*/
     .marcas{
         @include flex(0rem, center, center, column);
-        h3{
-            font-size: 1.3rem; 
+        h2{
+            font-size: $fuenteTamano320;
             text-align: center;
             padding: 0.5rem;
         }
         .slide{
             width: 20rem;
+            padding: 0.5rem;
         }
         .reels{
             @extend %separacionSuperior;
@@ -57,7 +56,7 @@
         @extend %separacionSuperior;
         gap: 1rem;
         justify-items: center;
-        #h3Pagos{
+        #h2Pagos{
             text-align: center;
             grid-area: titulo;
         }
@@ -82,22 +81,29 @@
                 padding: 0.7rem;
                 text-align: center;
                 border-radius: 1rem;
-                font-size: 1rem;
+                font-size: ($fuenteTamano320 - 0.4rem);
                 font-weight: 600;
             }
         }
         
     }
 }
-/*-----------MEDIA QUARIES 600PX--------------*/
+/*-----------INDEX MEDIA QUARIES 600PX--------------*/
 
 @media screen and (min-width: 600px){
     .mainIndex{
+        .h1Index{
+            font-size: ($fuenteTamano600 + 0.3rem);
+        }
         .columna{
             padding-left: 10rem;
             padding-right: 10rem;
         }
         .marcas{
+            h2{
+                font-size: $fuenteTamano600; 
+            }
+            font-size: 1.3rem; 
             .reels{
                 height: 8rem;
                 width: 32rem;
@@ -109,6 +115,9 @@
                                 "img1 img1"
                                 "img2 img2"
                                 "boton boton";
+            #h2Pagos{
+                font-size: $fuenteTamano600;
+            }
             #pagoTarjeta{
                 img{
                     height: 14rem;
@@ -122,7 +131,6 @@
         }
     }
 }
-
 /*-----------MEDIA QUARIES 1000PX--------------*/
 @media screen and (min-width: 1000px){
     .carrusel{
@@ -134,16 +142,16 @@
     .mainIndex{
         .h1Index{
             background-color: white;
-            font-size: 2rem;
+            font-size: ($fuenteTamano1000 + 0.3rem);
         }
         .columna{
             padding-left: 12rem;
             padding-right: 12rem;
         }
         .marcas{
-            h3{
+            h2{
                 background-color: white;
-                font-size: 2rem;
+                font-size: $fuenteTamano1000;
             }
             .slide{
                 width: 50rem;
@@ -166,17 +174,10 @@
         .pagos{
             display: grid;
             grid-template-areas:"titulo titulo titulo"
-                                "img 1 img1 img1"
-                                "img2 img2 img2"
-                                "texto boton boton";
-            #ulPagos{
-                font-size: 1rem;
-                font-weight: 500;
-            }
-            #formasPagos{
-                grid-area: img1;
-               
-            }
+                                "img2 img2 img1"
+                                "img2 img2 img1"
+                                "img2 img2 boton"
+                                "img2 img2 boton";
         }
     }
 }

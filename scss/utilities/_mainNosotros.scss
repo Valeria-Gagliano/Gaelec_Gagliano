@@ -3,12 +3,16 @@
 @import "utilities/extend";
 
 //Main pag. Nosotros
-
+/*Main de pag. Nosotros*/
 .mainNosotros{
     @include flex(2rem, center, justify, column);
     margin: 1rem;
-    .h1Nosotros, h3{
-        font-size: 1.5rem;
+    text-align: center;
+    .h1Nosotros{
+        font-size: ($fuenteTamano320 + 0.3rem);
+    }
+    h2{
+        font-size: $fuenteTamano320;
         text-align: center;
     }
     .nosotros{
@@ -23,7 +27,7 @@
     }
     .mision, .vision{
         color: $colorLetra;
-        @include flex(1rem, center, justify, column);
+        @include flex(1.5rem, space-evenly, justify, column);
         padding: 1rem;
         border-radius: 1rem;
         background-color: $colorSecundario;
@@ -32,26 +36,31 @@
         }
     }
 }
-
 @media screen and (min-width: 600px){
     .mainNosotros{
-      margin-left: 7rem;
-      margin-right: 7rem;
-      h3{
-        font-size: 1.5rem;
-      }
+        margin-left: 7rem;
+        margin-right: 7rem;
+        h1{
+            font-size: ($fuenteTamano600 +0.3rem);
+        }
+        h2{
+            font-size: $fuenteTamano600;
+        }
     }
 }
 
 @media screen and (min-width: 1000px){
-    .h1Nosotros, h3{
-        font-size: 3rem;
-    }
     .mainNosotros{
         display: grid;
         grid-template-areas:"nosotros nosotros"
                             "mision vision";
         gap: 4rem;
+        .h1Nosotros{
+            font-size: ($fuenteTamano1000 + 0.3rem);
+        }
+        h2{
+            font-size: $fuenteTamano1000;
+        }
     }
     .nosotros{
         grid-area: nosotros;

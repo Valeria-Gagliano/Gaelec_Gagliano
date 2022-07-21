@@ -1,13 +1,225 @@
 footer .vuelta {
   display: none; }
 
-.parrafoCompras, .mainIndex .h1Index, .mainIndex .marcas .reels, .mainIndex .pagos {
+.mainIndex .h1Index, .mainIndex .marcas .reels, .mainIndex .pagos, .parrafoCompras, .h1Productos, div .conteiner {
   margin-top: 3rem; }
 
 footer .vuelta {
   display: none; }
 
-.parrafoCompras, .mainIndex .h1Index, .mainIndex .marcas .reels, .mainIndex .pagos {
+.mainIndex .h1Index, .mainIndex .marcas .reels, .mainIndex .pagos, .parrafoCompras, .h1Productos, div .conteiner {
+  margin-top: 3rem; }
+
+/*Main Index de 320 a 600px*/
+/*Portada*/
+.carrusel {
+  display: flex;
+  padding: 0.5rem; }
+
+/*Main*/
+.mainIndex {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*Marcas*/
+  /*Formas de Pago*/ }
+  .mainIndex .h1Index {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 0.5rem; }
+  .mainIndex .columna {
+    display: flex;
+    gap: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem; }
+  .mainIndex .marcas {
+    display: flex;
+    gap: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .mainIndex .marcas h2 {
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 0.5rem; }
+    .mainIndex .marcas .slide {
+      width: 20rem;
+      padding: 0.5rem; }
+    .mainIndex .marcas .reels {
+      display: flex;
+      gap: 1rem;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      flex-wrap: wrap; }
+      .mainIndex .marcas .reels .marca {
+        height: 5rem;
+        width: 5rem; }
+  .mainIndex .pagos {
+    display: grid;
+    grid-template-areas: "titulo titulo" "img1 img1" "img2 img2" "boton boton";
+    gap: 1rem;
+    justify-items: center; }
+    .mainIndex .pagos #h2Pagos {
+      text-align: center;
+      grid-area: titulo; }
+    .mainIndex .pagos #formasPagos {
+      grid-area: img1; }
+      .mainIndex .pagos #formasPagos img {
+        height: 6.5rem; }
+    .mainIndex .pagos #pagoTarjeta {
+      grid-area: img2; }
+      .mainIndex .pagos #pagoTarjeta img {
+        height: 8rem; }
+    .mainIndex .pagos #consulta {
+      display: flex;
+      gap: 0;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      grid-area: boton; }
+      .mainIndex .pagos #consulta .botonConsulta {
+        width: 8rem;
+        background-color: #000128;
+        padding: 0.7rem;
+        text-align: center;
+        border-radius: 1rem;
+        font-size: 1rem;
+        font-weight: 600; }
+
+/*-----------INDEX MEDIA QUARIES 600PX--------------*/
+@media screen and (min-width: 600px) {
+  .mainIndex .h1Index {
+    font-size: 2rem; }
+  .mainIndex .columna {
+    padding-left: 10rem;
+    padding-right: 10rem; }
+  .mainIndex .marcas {
+    font-size: 1.3rem; }
+    .mainIndex .marcas h2 {
+      font-size: 1.7rem; }
+    .mainIndex .marcas .reels {
+      height: 8rem;
+      width: 32rem; }
+  .mainIndex .pagos {
+    display: grid;
+    grid-template-areas: "titulo titulo" "img1 img1" "img2 img2" "boton boton"; }
+    .mainIndex .pagos #h2Pagos {
+      font-size: 1.7rem; }
+    .mainIndex .pagos #pagoTarjeta img {
+      height: 14rem; }
+    .mainIndex .pagos #formasPagos img {
+      height: 12.5rem; } }
+
+/*-----------MEDIA QUARIES 1000PX--------------*/
+@media screen and (min-width: 1000px) {
+  .carrusel {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem; }
+  .mainIndex .h1Index {
+    background-color: white;
+    font-size: 2.3rem; }
+  .mainIndex .columna {
+    padding-left: 12rem;
+    padding-right: 12rem; }
+  .mainIndex .marcas h2 {
+    background-color: white;
+    font-size: 2rem; }
+  .mainIndex .marcas .slide {
+    width: 50rem; }
+  .mainIndex .marcas .carousel {
+    height: 10rem; }
+    .mainIndex .marcas .carousel .carousel-inner .carousel-item img {
+      height: 5rem; }
+  .mainIndex .marcas .marca {
+    height: 5rem;
+    width: 8rem; }
+  .mainIndex .pagos {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo" "img2 img2 img1" "img2 img2 img1" "img2 img2 boton" "img2 img2 boton"; } }
+
+footer .vuelta {
+  display: none; }
+
+.mainIndex .h1Index, .mainIndex .marcas .reels, .mainIndex .pagos, .parrafoCompras, .h1Productos, div .conteiner {
+  margin-top: 3rem; }
+
+/*Main de pag. Nosotros*/
+.mainNosotros {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: justify;
+  margin: 1rem;
+  text-align: center; }
+  .mainNosotros .h1Nosotros {
+    font-size: 1.7rem; }
+  .mainNosotros h2 {
+    font-size: 1.4rem;
+    text-align: center; }
+  .mainNosotros .nosotros {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: justify;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #5271ff; }
+    .mainNosotros .nosotros p {
+      text-align: justify; }
+  .mainNosotros .mision, .mainNosotros .vision {
+    color: #ffffff;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: justify;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #5271ff; }
+    .mainNosotros .mision p, .mainNosotros .vision p {
+      text-align: justify; }
+
+@media screen and (min-width: 600px) {
+  .mainNosotros {
+    margin-left: 7rem;
+    margin-right: 7rem; }
+    .mainNosotros h1 {
+      font-size: 2rem; }
+    .mainNosotros h2 {
+      font-size: 1.7rem; } }
+
+@media screen and (min-width: 1000px) {
+  .mainNosotros {
+    display: grid;
+    grid-template-areas: "nosotros nosotros" "mision vision";
+    gap: 4rem; }
+    .mainNosotros .h1Nosotros {
+      font-size: 2.3rem; }
+    .mainNosotros h2 {
+      font-size: 2rem; }
+  .nosotros {
+    grid-area: nosotros; }
+  .vision {
+    grid-area: vision; }
+  .mision {
+    grid-area: mision; } }
+
+footer .vuelta {
+  display: none; }
+
+.mainIndex .h1Index, .mainIndex .marcas .reels, .mainIndex .pagos, .parrafoCompras, .h1Productos, div .conteiner {
   margin-top: 3rem; }
 
 .mainHacemos {
@@ -17,7 +229,8 @@ footer .vuelta {
   justify-content: center;
   align-items: center; }
   .mainHacemos .tituloComprar {
-    text-align: center; }
+    text-align: center;
+    font-size: 1.7rem; }
   .mainHacemos .parrafoComprar {
     text-align: justify;
     padding: 1.5rem; }
@@ -33,26 +246,35 @@ footer .vuelta {
       height: 15rem;
       border-radius: 1rem; }
 
-.parrafoCompras .tituloFila2 {
-  text-align: center; }
+.parrafoCompras .tituloMayoristas {
+  text-align: center;
+  font-size: 1.4rem; }
 
 .parrafoCompras .parrafoComprar2 {
   text-align: justify;
   padding: 1.5rem; }
 
 @media screen and (min-width: 600px) {
+  .mainHacemos .tituloComprar {
+    font-size: 2rem; }
   .mainHacemos .parrafoComprar {
     padding: 3rem; }
   .mainHacemos .pasosCompra .imgCompra {
     height: 18rem; }
+  .parrafoCompras .tituloMayoristas {
+    font-size: 1.7rem; }
   .parrafoCompras .parrafoComprar2 {
     padding: 3rem; } }
 
 @media screen and (min-width: 1000px) {
+  .mainHacemos .tituloComprar {
+    font-size: 2.3rem; }
   .mainHacemos .parrafoComprar {
     padding: 1.5rem;
     padding-left: 12rem;
     padding-right: 12rem; }
+  .parrafoCompras .tituloMayoristas {
+    font-size: 2rem; }
   .parrafoCompras .parrafoComprar2 {
     padding: 1.5rem;
     padding-left: 12rem;
@@ -61,38 +283,58 @@ footer .vuelta {
 footer .vuelta {
   display: none; }
 
-.parrafoCompras, .mainIndex .h1Index, .mainIndex .marcas .reels, .mainIndex .pagos {
+.mainIndex .h1Index, .mainIndex .marcas .reels, .mainIndex .pagos, .parrafoCompras, .h1Productos, div .conteiner {
   margin-top: 3rem; }
 
 /*Main de pag. Productos*/
 /*Medida de 320 a 600px*/
-.h1productos {
+.h1Productos {
   text-align: center;
-  background-color: white; }
+  font-size: 1.7rem; }
+
+.card {
+  padding: 0.8rem;
+  border-color: #9acfce;
+  border-width: 0.2rem;
+  width: 12rem;
+  height: 16rem; }
+  .card .card-img-top {
+    display: flex;
+    justify-content: center; }
+  .card .card-text {
+    font-size: 0.9rem; }
 
 /*Medida de 600 a 1000px*/
 @media screen and (min-width: 600px) {
-  .campoGrande {
-    height: 12rem;
-    width: 25rem;
-    border: none; } }
+  .h1Productos {
+    font-size: 2rem; }
+  .card {
+    width: 13rem;
+    height: 17rem; }
+    .card .card-text {
+      font-size: 1.1rem; } }
 
 /*Medida de 1000px a Max*/
 @media screen and (min-width: 1000px) {
-  .productos {
-    font-size: 2rem; } }
+  .h1Productos {
+    font-size: 2.3rem; }
+  .card {
+    width: 14.5rem;
+    height: 20rem; }
+    .card .card-text {
+      font-size: 1.5rem; } }
 
 footer .vuelta {
   display: none; }
 
-.parrafoCompras, .mainIndex .h1Index, .mainIndex .marcas .reels, .mainIndex .pagos {
+.mainIndex .h1Index, .mainIndex .marcas .reels, .mainIndex .pagos, .parrafoCompras, .h1Productos, div .conteiner {
   margin-top: 3rem; }
 
 /*Main de pag. Presupuesto*/
 .tituloPresupuesto {
   text-align: center;
   margin: 2rem;
-  background-color: white; }
+  font-size: 1.7rem; }
 
 .mainPresupuesto {
   display: flex;
@@ -126,236 +368,43 @@ footer .vuelta {
   .mainPresupuesto .imgPresupuesto {
     display: none; }
 
-.presupuestoMensaje p {
+.presupuestoMensaje {
+  margin: 1rem;
+  font-size: 0.9rem;
   text-align: center; }
 
 @media screen and (min-width: 600px) {
-  .mainPresupuesto .bordePresupuesto .campoGrande {
-    height: 12rem;
-    width: 25rem; } }
-
-@media screen and (min-width: 1000px) {
   .tituloPresupuesto {
     font-size: 2rem; }
   .mainPresupuesto .bordePresupuesto .campoGrande {
+    height: 12rem;
+    width: 25rem; }
+  .presupuestoMensaje {
+    font-size: 0.9rem; } }
+
+@media screen and (min-width: 1000px) {
+  .tituloPresupuesto {
+    font-size: 2.3rem; }
+  .mainPresupuesto .bordePresupuesto .campoGrande {
     width: 30rem; }
   .mainPresupuesto .imgPresupuesto {
-    display: flex; }
+    display: flex;
+    height: 26rem; }
   .presupuestoMensaje {
-    margin: 2rem; }
-    .presupuestoMensaje p {
-      font-size: medium; } }
+    margin: 2rem;
+    font-size: 1.2rem; } }
 
-footer .vuelta {
-  display: none; }
-
-.parrafoCompras, .mainIndex .h1Index, .mainIndex .marcas .reels, .mainIndex .pagos {
-  margin-top: 3rem; }
-
-/*Medida de 320 a 600px*/
-/*Portada*/
-.carrusel {
-  display: flex;
-  padding: 0.5rem; }
-
-/*Main*/
-.mainIndex {
-  display: flex;
-  gap: 3rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /*Marcas*/
-  /*Formas de Pago*/ }
-  .mainIndex .h1Index {
-    text-align: center;
-    font-size: 1.3rem;
-    padding: 0.5rem; }
-  .mainIndex .columna {
-    display: flex;
-    gap: 0rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 4rem;
-    padding-right: 4rem; }
-  .mainIndex .marcas {
-    display: flex;
-    gap: 0rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .mainIndex .marcas h3 {
-      font-size: 1.3rem;
-      text-align: center;
-      padding: 0.5rem; }
-    .mainIndex .marcas .slide {
-      width: 20rem; }
-    .mainIndex .marcas .reels {
-      display: flex;
-      gap: 1rem;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      height: 3rem;
-      flex-wrap: wrap; }
-      .mainIndex .marcas .reels .marca {
-        height: 5rem;
-        width: 5rem; }
-  .mainIndex .pagos {
-    display: grid;
-    grid-template-areas: "titulo titulo" "img1 img1" "img2 img2" "boton boton";
-    gap: 1rem;
-    justify-items: center; }
-    .mainIndex .pagos #h3Pagos {
-      text-align: center;
-      grid-area: titulo; }
-    .mainIndex .pagos #formasPagos {
-      grid-area: img1; }
-      .mainIndex .pagos #formasPagos img {
-        height: 6.5rem; }
-    .mainIndex .pagos #pagoTarjeta {
-      grid-area: img2; }
-      .mainIndex .pagos #pagoTarjeta img {
-        height: 8rem; }
-    .mainIndex .pagos #consulta {
-      display: flex;
-      gap: 0;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      grid-area: boton; }
-      .mainIndex .pagos #consulta .botonConsulta {
-        width: 8rem;
-        background-color: #000128;
-        padding: 0.7rem;
-        text-align: center;
-        border-radius: 1rem;
-        font-size: 1rem;
-        font-weight: 600; }
-
-/*-----------MEDIA QUARIES 600PX--------------*/
-@media screen and (min-width: 600px) {
-  .mainIndex .columna {
-    padding-left: 10rem;
-    padding-right: 10rem; }
-  .mainIndex .marcas .reels {
-    height: 8rem;
-    width: 32rem; }
-  .mainIndex .pagos {
-    display: grid;
-    grid-template-areas: "titulo titulo" "img1 img1" "img2 img2" "boton boton"; }
-    .mainIndex .pagos #pagoTarjeta img {
-      height: 14rem; }
-    .mainIndex .pagos #formasPagos img {
-      height: 12.5rem; } }
-
-/*-----------MEDIA QUARIES 1000PX--------------*/
-@media screen and (min-width: 1000px) {
-  .carrusel {
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-top: 2rem;
-    padding-bottom: 5rem; }
-  .mainIndex .h1Index {
-    background-color: white;
-    font-size: 2rem; }
-  .mainIndex .columna {
-    padding-left: 12rem;
-    padding-right: 12rem; }
-  .mainIndex .marcas h3 {
-    background-color: white;
-    font-size: 2rem; }
-  .mainIndex .marcas .slide {
-    width: 50rem; }
-  .mainIndex .marcas .carousel {
-    height: 10rem; }
-    .mainIndex .marcas .carousel .carousel-inner .carousel-item img {
-      height: 5rem; }
-  .mainIndex .marcas .marca {
-    height: 5rem;
-    width: 8rem; }
-  .mainIndex .pagos {
-    display: grid;
-    grid-template-areas: "titulo titulo titulo" "img 1 img1 img1" "img2 img2 img2" "texto boton boton"; }
-    .mainIndex .pagos #ulPagos {
-      font-size: 1rem;
-      font-weight: 500; }
-    .mainIndex .pagos #formasPagos {
-      grid-area: img1; } }
-
-footer .vuelta {
-  display: none; }
-
-.parrafoCompras, .mainIndex .h1Index, .mainIndex .marcas .reels, .mainIndex .pagos {
-  margin-top: 3rem; }
-
-.mainNosotros {
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: justify;
-  margin: 1rem; }
-  .mainNosotros .h1Nosotros, .mainNosotros h3 {
-    font-size: 1.5rem;
-    text-align: center; }
-  .mainNosotros .nosotros {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: justify;
-    color: #ffffff;
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: #5271ff; }
-    .mainNosotros .nosotros p {
-      text-align: justify; }
-  .mainNosotros .mision, .mainNosotros .vision {
-    color: #ffffff;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: justify;
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: #5271ff; }
-    .mainNosotros .mision p, .mainNosotros .vision p {
-      text-align: justify; }
-
-@media screen and (min-width: 600px) {
-  .mainNosotros {
-    margin-left: 7rem;
-    margin-right: 7rem; }
-    .mainNosotros h3 {
-      font-size: 1.5rem; } }
-
-@media screen and (min-width: 1000px) {
-  .h1Nosotros, h3 {
-    font-size: 3rem; }
-  .mainNosotros {
-    display: grid;
-    grid-template-areas: "nosotros nosotros" "mision vision";
-    gap: 4rem; }
-  .nosotros {
-    grid-area: nosotros; }
-  .vision {
-    grid-area: vision; }
-  .mision {
-    grid-area: mision; } }
-
+/*Encabezado*/
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif; }
 
 a {
   color: white;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-size: small; }
+  font-size: 1.4rem; }
 
 nav {
   margin: 0;
@@ -380,9 +429,10 @@ nav {
       list-style: none; }
 
 .subtitulo {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: center; }
 
+/*Pie de Pagina*/
 footer {
   text-align: center;
   background-color: #000128;
@@ -410,29 +460,27 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
-    footer .redes h5 {
+    footer .redes h3 {
       width: 11rem;
       margin-bottom: 0.5rem;
       text-align: left;
-      font-size: small; }
+      font-size: 1.1rem; }
     footer .redes img {
       width: 2rem;
       margin-bottom: 0.5rem; }
   footer .derechos {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
     display: block;
     text-align: center;
     padding-top: 1rem;
-    font-size: x-small; }
+    font-size: 0.8rem; }
 
+/*-------------Medida a partir de los 600px-------------*/
 @media screen and (min-width: 600px) {
   navbar-nav {
     gap: 2rem; }
   nav .submenu {
     justify-content: space-evenly; }
-    nav .submenu li {
-      left: 9rem; }
   footer .menuRedes {
     justify-content: center;
     gap: 3rem; }
@@ -447,8 +495,9 @@ footer {
     bottom: 1.1rem;
     right: 1rem; }
     footer .botonWhatsapp img {
-      height: 2.5rem; } }
+      height: 2.8rem; } }
 
+/*------------Medida a partir de los 1000px--------------*/
 @media screen and (min-width: 1000px) {
   nav {
     gap: 7rem; }
@@ -474,7 +523,7 @@ footer {
     footer .botonWhatsapp, footer .vuelta {
       right: 2rem; }
       footer .botonWhatsapp img, footer .vuelta img {
-        height: 3.8rem;
-        width: 3.8rem; }
-    footer h5 {
-      font-size: medium; } }
+        height: 3.1rem;
+        width: 3.2rem; }
+    footer h3 {
+      font-size: 1.7rem; } }
