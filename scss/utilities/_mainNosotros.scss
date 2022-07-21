@@ -11,12 +11,14 @@
     .h1Nosotros{
         font-size: ($fuenteTamano320 + 0.3rem);
     }
-    h2{
+    .titulo{
         font-size: $fuenteTamano320;
         text-align: center;
     }
     .nosotros{
         @include flex(1rem, center, justify, column);
+    }
+    .nosotros, .mision, .vision{
         color: $colorLetra;
         padding: 1rem;
         border-radius: 1rem;
@@ -26,26 +28,24 @@
         }
     }
     .mision, .vision{
-        color: $colorLetra;
         @include flex(1.5rem, space-evenly, justify, column);
-        padding: 1rem;
-        border-radius: 1rem;
-        background-color: $colorSecundario;
-        p{
-            text-align: justify;
-        }
     }
 }
 @media screen and (min-width: 600px){
     .mainNosotros{
         margin-left: 7rem;
         margin-right: 7rem;
-        h1{
+        .h1Nosotros{
             font-size: ($fuenteTamano600 +0.3rem);
         }
-        h2{
+        .titulo{
             font-size: $fuenteTamano600;
         }
+        .nosotros, .mision, .vision{
+             p{
+                 font-size: ($fuenteTamano320 - 0.3rem);
+             }
+         }
     }
 }
 
@@ -58,7 +58,7 @@
         .h1Nosotros{
             font-size: ($fuenteTamano1000 + 0.3rem);
         }
-        h2{
+        .titulo{
             font-size: $fuenteTamano1000;
         }
     }
@@ -67,8 +67,15 @@
     }
     .vision{
         grid-area: vision;
+        
     }
     .mision{
         grid-area: mision;
+    }
+    .nosotros, .mision, .vision{
+       margin: 2rem;
+        p{
+            font-size: ($fuenteTamano320 - 0.2rem);
+        }
     }
 }

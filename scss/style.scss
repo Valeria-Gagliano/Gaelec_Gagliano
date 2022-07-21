@@ -85,12 +85,6 @@ footer{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        h3{
-            width: 11rem;
-            margin-bottom: 0.5rem;
-            text-align: left;
-            font-size: ($fuenteTamano320 - 0.3rem);
-        }
         img{
             width: 2rem;
             margin-bottom: 0.5rem;
@@ -150,6 +144,7 @@ footer{
             }
         }
         .submenu{
+            font-size: ($fuenteTamano320 - 0.2rem);
             background-color: #ffffff;
             gap: 3rem;
             justify-content: space-evenly;
@@ -169,12 +164,12 @@ footer{
         .botonWhatsapp, .vuelta {
             right: 2rem;
             img{
-                height: 3.1rem;
-                width: 3.2rem;
+                height: 3.5rem;
+                width: 3.5rem;
             }
         } 
-        h3{
-            font-size: $fuenteTamano600;
+        .derechos{
+            font-size: ($fuenteTamano320 - 0.3rem);
         }
     }
 }
